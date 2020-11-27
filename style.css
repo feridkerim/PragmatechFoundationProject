@@ -1,0 +1,309 @@
+/* v1.0 | 20080212 */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+	height: 800px;
+	background: url(img/banner-02.jpg);
+
+}
+
+#kategoriya {
+	height: 750px;
+}
+
+#product {
+	height: 600px;
+}
+
+#blog {
+	height: 650px;
+}
+
+#foto {
+	height: 350px;
+}
+
+footer {
+	height: 400px;
+}
+
+
+
+.shop {
+	height: 50px;
+	background-color: black;
+	color: white;
+	align-items: center;
+	display: flex;
+}
+
+.shop i {
+	font-weight: 900;
+	margin: 0 0 0 30px;
+	color: white
+}
+
+#shopnow {
+	margin: 0 0 0 20px;
+	align-items: center;
+	font-size: 15px;
+}
+
+.custom-select-box {
+	float: right;
+	width: 95px;
+	height: 30px;
+	margin-left: 20px;
+	background: #d33b33;
+}
+
+
+
+.right-phone-box {
+	float: right;
+	margin-left: 10px;
+	padding: 3px 0 0 0;
+}
+
+.right-phone-box p {
+	margin: 0px;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 30px;
+	align-items: center;
+}
+
+.right-phone-box p a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.right-phone-box p a:hover {
+	color: #d33b33;
+}
+
+
+
+.our-link {
+	float: right;
+}
+
+.our-link ul li {
+	display: inline-block;
+	border-right: 1px solid #ffffff;
+	padding: 0px 10px;
+	line-height: 14px;
+}
+
+.our-link ul {
+	line-height: 30px;
+}
+
+.our-link ul li a {
+	color: #ffffff;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.our-link ul li a:hover {
+	color: #d33b33;
+
+}
+
+
+
+.logoMenyu {
+	width: 1208px;
+	height: 115px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+
+}
+
+#zem {
+	color: black;
+	display: inline-block;
+	align-items: center;
+	font-size: 32px;
+	color: darkgreen;
+}
+
+.logoMenyu ul {
+	display: inline-block;
+	margin: 0px 0px 0 200px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.logoMenyu ul li {
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.logoMenyu span {
+	color: black;
+	margin: 0 10px;
+}
+
+.box1 {
+	margin: 0 auto;
+}
+
+#kategoriya .box1 div {
+	width: 350px;
+	height: 350px;
+	border: 2px red solid;
+	display: flex;
+	justify-content: space-around;
+	background-color: red;
+
+
+
+}
+
+#kategoriya .box2 div {
+	width: 350px;
+	height: 350px;
+	border: 2px red solid;
+	display: flex;
+	justify-content: space-around;
+	background-color: red;
+
+
+
+}
+
+
+#home {
+	color: red;
+}
