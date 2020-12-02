@@ -1,5 +1,3 @@
-/* v1.0 | 20080212 */
-
 html,
 body,
 div,
@@ -25,8 +23,6 @@ cite,
 code,
 del,
 dfn,
-em,
-font,
 img,
 ins,
 kbd,
@@ -35,15 +31,10 @@ s,
 samp,
 small,
 strike,
-strong,
 sub,
 sup,
 tt,
 var,
-b,
-u,
-i,
-center,
 dl,
 dt,
 dd,
@@ -54,6 +45,10 @@ fieldset,
 form,
 label,
 legend,
+input,
+select,
+textarea,
+button,
 table,
 caption,
 tbody,
@@ -61,14 +56,47 @@ tfoot,
 thead,
 tr,
 th,
-td {
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	outline: 0;
 	font-size: 100%;
+	font: inherit;
 	vertical-align: baseline;
-	background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
 }
 
 body {
@@ -93,26 +121,28 @@ q:after {
 	content: none;
 }
 
-/* remember to define focus styles! */
-:focus {
-	outline: 0;
-}
-
-/* remember to highlight inserts somehow! */
-ins {
-	text-decoration: none;
-}
-
-del {
-	text-decoration: line-through;
-}
-
-/* tables still need 'cellspacing="0"' in the markup */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
+a img,
+:link img,
+:visited img {
+	border: 0;
+}
+
+:focus {
+	outline: 0;
+}
+
+.clear {
+	clear: both;
+}
 
 
 
@@ -134,17 +164,17 @@ table {
 
 
 
-
-
-#header {
+.photo {
 	height: 800px;
 	background: url(../img/banner-02.jpg);
 	position: relative;
 	z-index: 0;
+	background-size: cover;
+
 
 }
 
-#kategoriya {
+#categories {
 	height: 750px;
 }
 
@@ -166,38 +196,43 @@ footer {
 
 
 
-.shop {
+.main-top {
 	height: 50px;
 	background-color: black;
 	color: white;
-	align-items: center;
 	display: flex;
+	justify-content: space-between;
 }
 
-.shop i {
-	font-weight: 900;
-	margin: 0 0 0 30px;
-	color: white
-}
+#cart {}
 
-#shopnow {
-	margin: 0 0 0 20px;
+
+.shopnow {
+	display: flex;
 	align-items: center;
 	font-size: 15px;
 }
 
+.accaunt {
+	display: flex;
+}
+
 .custom-select-box {
-	float: right;
-	width: 95px;
+	display: flex;
+	align-items: center;
 	height: 30px;
-	margin-left: 20px;
 	background: #d33b33;
+	margin: auto 32px auto 20px;
+	width: 80px;
 }
 
 
 
+
+
 .right-phone-box {
-	float: right;
+	display: flex;
+	align-items: center;
 	margin-left: 10px;
 	padding: 3px 0 0 0;
 }
@@ -222,11 +257,10 @@ footer {
 
 
 .our-link {
-	float: right;
+	display: flex;
 }
 
 .our-link ul li {
-	display: inline-block;
 	border-right: 1px solid #ffffff;
 	padding: 0px 10px;
 	line-height: 14px;
@@ -234,6 +268,8 @@ footer {
 
 .our-link ul {
 	line-height: 30px;
+	display: flex;
+	align-items: center;
 }
 
 .our-link ul li a {
@@ -257,7 +293,7 @@ footer {
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: space-between;
 
 
 }
@@ -307,8 +343,34 @@ footer {
 	align-items: center;
 }
 
+
+.content .content-middle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.content .content-middle button {
+	background-color: #d33b33;
+	border: none;
+	color: white;
+	font-size: 24px;
+	text-transform: uppercase;
+	width: 160px;
+	height: 60px;
+}
+
+.content .content-arrows {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+}
+
 .content span {
-	margin: 0 0 0 156px;
+	display: flex;
+	justify-content: center;
 }
 
 .content h1 {
@@ -320,42 +382,20 @@ footer {
 
 .content p {}
 
-.content button {
-	padding: 10px 20px;
+.content .content-arrows button {
 	background-color: #d33b33;
 	border: none;
 	color: white;
-	font-size: 24px;
+	font-size: 45px;
 	text-transform: uppercase;
-	margin: 35px 0 0 0;
+
+	width: 70px;
+	height: 70px;
+
 }
 
 .content a {}
 
-.next {
-	padding: 10px 20px;
-	background-color: #d33b33;
-	border: none;
-	color: white;
-	font-size: 50px;
-	text-transform: uppercase;
-	position: absolute;
-	z-index: 6;
-	top: 340px;
-	left: 1837px;
-}
-
-.prev {
-	padding: 10px 20px;
-	background-color: #d33b33;
-	border: none;
-	color: white;
-	font-size: 50px;
-	text-transform: uppercase;
-	position: absolute;
-	z-index: 6;
-	top: 340px;
-}
 
 .overlay {
 	background-color: rgba(0, 0, 0, 0.5);
@@ -390,17 +430,12 @@ footer {
 .column {
 	width: 350px;
 	height: 350px;
-	background: black;
+	border: 1px solid black;
 	margin: 15px 15px;
 	display: flex;
 	position: relative;
-	transition: all .5s ease-in-out;
 }
 
-.column:hover {
-	transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-}
 
 
 
@@ -416,7 +451,7 @@ footer {
 	color: #ffffff;
 	font-size: 18px;
 	font-weight: 700;
-	padding: 8px 155px;
+	padding: 8px 157px;
 	background: red;
 }
 
@@ -432,6 +467,54 @@ footer {
 	color: #ffffff;
 	font-size: 18px;
 	font-weight: 700;
-	padding: 8px 155px;
+	padding: 8px 157px;
 	background: red;
+}
+
+
+
+.top {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.top .button button {
+	padding: 10px 20px;
+	background-color: #d33b33;
+	border: none;
+	color: white;
+	font-size: 20px;
+	margin: 20px 0 0 0;
+}
+
+.best {
+	display: flex;
+	justify-content: center;
+}
+
+.best div {
+	width: 255px;
+	height: 415px;
+	border: 1px solid black;
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+
+.best div p {
+	width: 53px;
+	height: 30px;
+	background: red;
+	color: white;
+	position: absalute;
+	z-index: 6;
+}
+
+.best div .text {
+	width: 255px;
+	height: 90px;
 }
