@@ -77,12 +77,12 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 article,
@@ -96,425 +96,555 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a img,
 :link img,
 :visited img {
-	border: 0;
+  border: 0;
 }
 
 :focus {
-	outline: 0;
+  outline: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.photo {
-	height: 800px;
-	background: url(../img/banner-02.jpg);
-	position: relative;
-	z-index: 0;
-	background-size: cover;
-
-
+.header {
+  height: 800px;
+  background: url(../img/banner-02.jpg);
+  position: relative;
+  z-index: 0;
+  background-size: cover;
 }
 
 #categories {
-	height: 750px;
+  height: 750px;
 }
 
 #product {
-	height: 600px;
+  height: 600px;
 }
 
 #blog {
-	height: 650px;
+  height: 850px;
+  margin: 100px 0 0 0;
+  background: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #foto {
-	height: 350px;
+  height: 350px;
 }
 
 footer {
-	height: 400px;
+  height: 400px;
 }
-
-
 
 .main-top {
-	height: 50px;
-	background-color: black;
-	color: white;
-	display: flex;
-	justify-content: space-between;
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#cart {}
-
-
 .shopnow {
-	display: flex;
-	align-items: center;
-	font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
 }
 
 .accaunt {
-	display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .custom-select-box {
-	display: flex;
-	align-items: center;
-	height: 30px;
-	background: #d33b33;
-	margin: auto 32px auto 20px;
-	width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  background: #d33b33;
+  margin: auto 32px auto 20px;
+  width: 80px;
 }
 
-
-
-
-
 .right-phone-box {
-	display: flex;
-	align-items: center;
-	margin-left: 10px;
-	padding: 3px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+  padding: 3px 0 0 0;
 }
 
 .right-phone-box p {
-	margin: 0px;
-	color: #ffffff;
-	font-size: 14px;
-	line-height: 30px;
-	align-items: center;
+  margin: 0px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .right-phone-box p a {
-	color: #ffffff;
-	text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .right-phone-box p a:hover {
-	color: #d33b33;
+  color: #d33b33;
 }
 
-
-
 .our-link {
-	display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .our-link ul li {
-	border-right: 1px solid #ffffff;
-	padding: 0px 10px;
-	line-height: 14px;
+  border-right: 1px solid #ffffff;
+  padding: 0px 10px;
+  line-height: 14px;
 }
 
 .our-link ul {
-	line-height: 30px;
-	display: flex;
-	align-items: center;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .our-link ul li a {
-	color: #ffffff;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 14px;
-	text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .our-link ul li a:hover {
-	color: #d33b33;
-
+  color: #d33b33;
 }
 
-
-
 .logoMenyu {
-	width: 1208px;
-	height: 115px;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-
-
+  width: 1208px;
+  height: 115px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #zem {
-	color: black;
-	display: inline-block;
-	align-items: center;
-	font-size: 32px;
-	color: darkgreen;
+  color: black;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 32px;
+  color: darkgreen;
 }
 
 .logoMenyu ul {
-	display: inline-block;
-	margin: 0px 0px 0 388px;
-	justify-content: flex-start;
-	align-items: center;
+  display: inline-block;
+  margin: 0px 0px 0 388px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logoMenyu ul li {
-	display: inline-block;
-	margin: 0 15px;
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .logoMenyu span {
-	color: black;
-	margin: 0 10px;
+  color: black;
+  margin: 0 10px;
 }
 
-
-
 #home {
-	color: red;
+  color: red;
 }
 
 .content {
-	width: 100%;
-	height: 100%;
-	color: white;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 3;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-
 .content .content-middle {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .content .content-middle button {
-	background-color: #d33b33;
-	border: none;
-	color: white;
-	font-size: 24px;
-	text-transform: uppercase;
-	width: 160px;
-	height: 60px;
+  background-color: #d33b33;
+  border: none;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  width: 160px;
+  height: 60px;
 }
 
 .content .content-arrows {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
 }
 
 .content span {
-	display: flex;
-	justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .content h1 {
-	text-transform: uppercase;
-	font-size: 65px;
-	font-weight: 900;
-	padding: 0 0 10px 0;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 900;
+  padding: 0 0 10px 0;
 }
-
-.content p {}
 
 .content .content-arrows button {
-	background-color: #d33b33;
-	border: none;
-	color: white;
-	font-size: 45px;
-	text-transform: uppercase;
-
-	width: 70px;
-	height: 70px;
-
+  background-color: #d33b33;
+  border: none;
+  color: white;
+  font-size: 45px;
+  text-transform: uppercase;
+  width: 70px;
+  height: 70px;
 }
-
-.content a {}
-
 
 .overlay {
-	background-color: rgba(0, 0, 0, 0.5);
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	width: 100%;
-	height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
-
 .container {
-	width: 1200px;
-	margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .row1 {
-	display: flex;
-	justify-content: center;
-	margin: 70px 0 15px 0;
-
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 70px 0 15px 0;
 }
 
 .row {
-	display: flex;
-	justify-content: center;
-	position: relative;
-	z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 0;
 }
 
 .column {
-	width: 350px;
-	height: 350px;
-	border: 1px solid black;
-	margin: 15px 15px;
-	display: flex;
-	position: relative;
+  width: 350px;
+  height: 350px;
+  border: 1px solid black;
+  margin: 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
 
-
-
-
 .row1 button {
-	position: absolute;
-	z-index: 2;
-	bottom: 0px;
-	left: 0px;
-	right: 0;
-	margin: 0 auto;
-	text-align: center;
-	border: none;
-	color: #ffffff;
-	font-size: 18px;
-	font-weight: 700;
-	padding: 8px 157px;
-	background: red;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  background: red;
+  width: 350px;
+  height: 50px;
 }
 
 .row button {
-	position: absolute;
-	z-index: 2;
-	bottom: 0px;
-	left: 0px;
-	right: 0;
-	margin: 0 auto;
-	text-align: center;
-	border: none;
-	color: #ffffff;
-	font-size: 18px;
-	font-weight: 700;
-	padding: 8px 157px;
-	background: red;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  background: red;
+  width: 350px;
+  height: 50px;
 }
-
-
 
 .top {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-
 .top .button button {
-	padding: 10px 20px;
-	background-color: #d33b33;
-	border: none;
-	color: white;
-	font-size: 20px;
-	margin: 20px 0 0 0;
+  padding: 10px 20px;
+  background-color: #d33b33;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin: 20px 0 0 0;
 }
 
 .best {
-	display: flex;
-	justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.best div {
-	width: 255px;
-	height: 415px;
-	border: 1px solid black;
-	display: flex;
-	justify-content: flex-end;
+.best .box {
+  width: 255px;
+  height: 415px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  margin: 45px 25px 0 0;
 }
 
-
-
-.best div p {
-	width: 53px;
-	height: 30px;
-	background: red;
-	color: white;
-	position: absalute;
-	z-index: 6;
+.best div .sale {
+  width: 53px;
+  height: 30px;
+  background: red;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.best div .text {
-	width: 255px;
-	height: 90px;
+.best .text {
+  width: 255px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f5f5f5;
 }
+
+#blog span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40px;
+  margin: 0 0 20px;
+}
+
+#blog p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: inherit;
+}
+
+#blog .row div {
+  width: 350px;
+  height: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 40px 25px 0 0;
+}
+
+#blog .row div .row2 {
+  height: 230px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background: white;
+}
+
+#blog .row2 ul {
+  width: 30px;
+  height: 80px;
+  background: black;
+}
+
+#blog .row2 ul span {
+  color: white;
+  font-size: small;
+  margin: 7px;
+}
+
+#blog .row2 div {
+  width: 300px;
+  height: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 8px 0;
+  background: white;
+}
+/*# sourceMappingURL=style.css.map */

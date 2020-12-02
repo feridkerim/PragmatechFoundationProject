@@ -1,0 +1,245 @@
+@import '/sass/variables.scss';
+
+.header {
+	height: 800px;
+	background: url(/img/banner-02.jpg);
+	position: relative;
+	z-index: 0;
+    background-size: cover;
+    .logoMenyu {
+        width: 1208px;
+        height: 115px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        #zem {
+            color: black;
+            display: inline-block;
+            align-items: center;
+            font-size: 32px;
+            color: darkgreen;
+        }
+        span {
+            color: black;
+            margin: 0 10px;
+        }
+        ul {
+            display: inline-block;
+            margin: 0px 0px 0 388px;
+            justify-content: flex-start;
+            align-items: center;
+            li {
+                display: inline-block;
+                margin: 0 15px;
+            }
+        }
+    
+    
+    }
+    .content {
+        width: 100%;
+        height: 100%;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {}
+        a {}
+
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 65px;
+            font-weight: 900;
+            padding: 0 0 10px 0;
+        }
+        span {
+            display: flex;
+            justify-content: center;
+        }
+        .content-arrows {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            button {
+                background-color: #d33b33;
+                border: none;
+                color: white;
+                font-size: 45px;
+                text-transform: uppercase;
+            
+                width: 70px;
+                height: 70px;
+            
+            }
+        }
+        .content-middle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            button {
+                background-color: #d33b33;
+                border: none;
+                color: white;
+                font-size: 24px;
+                text-transform: uppercase;
+                width: 160px;
+                height: 60px;
+            }
+        }
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
+
+
+
+
+
+.main-top {
+	height: 50px;
+	background-color: black;
+	color: white;
+	display: flex;
+    justify-content: space-between;
+    .accaunt {
+        display: flex;
+        .our-link {
+            display: flex;
+            ul {
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+                li {
+                    border-right: 1px solid #ffffff;
+                    padding: 0px 10px;
+                    line-height: 14px;
+                    a {
+                        color: #ffffff;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        text-decoration: none;
+                        &:hover{
+                            color: #d33b33;
+                        }
+                    }
+                }
+            }
+        }
+        .right-phone-box {
+            margin-left: 10px;
+            padding: 3px 0 0 0;
+             p {
+                margin: 0px;
+                color: #ffffff;
+                font-size: 14px;
+                line-height: 30px;
+                align-items: center;
+                 a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    &:hover{
+                        color: #d33b33;
+                    }
+                }
+            }
+        }
+        
+        .custom-select-box {
+            height: 30px;
+            background: #d33b33;
+            margin: auto 32px auto 20px;
+            width: 80px;
+        }
+    }
+    .shopnow {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#home {
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

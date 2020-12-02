@@ -7,7 +7,6 @@ Lahiyə 5 hissədən ibarət olacaq:
 - Haqqimizda
 - Seçiımiş məhsullar
 - Əlaqə
-- Day01
 
 # Day01
 
@@ -22,3 +21,7 @@ Lahiyə 5 hissədən ibarət olacaq:
 
 - Header bolmesinde deyisiklikler edildi
 - Product bolmesinde qutular yerlesdirildi
+
+# Day04
+- blog bolmesinde qutular yerlesdirildi
+- lahiyeye SASS tetbiq olundu
