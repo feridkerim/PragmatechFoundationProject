@@ -1,7 +1,13 @@
-$main-color: #d33b33;
 
+$main-color:#d33b33;
 
-flex-align-itmes-center{
+%flex-align-items-center{
     display: flex;
 	align-items: center;
+}
+
+%flex-align-items-space-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
