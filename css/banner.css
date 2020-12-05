@@ -1,0 +1,104 @@
+.banner {
+  height: 800px;
+  background: url(../img/banner-02.jpg);
+  position: relative;
+  z-index: 0;
+  background-size: cover;
+}
+
+.banner .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.banner .content {
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .content .content-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .content .content-middle span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .content .content-middle h1 {
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 900;
+  padding: 0 0 10px 0;
+}
+
+.banner .content .content-middle button {
+  background-color: #d33b33;
+  border: none;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  width: 160px;
+  height: 60px;
+}
+
+.banner .content .content-middle .content-arrows {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+}
+
+.banner .content .content-middle .content-arrows button {
+  background-color: #d33b33;
+  border: none;
+  color: white;
+  font-size: 45px;
+  text-transform: uppercase;
+  width: 70px;
+  height: 70px;
+}
+/*# sourceMappingURL=banner.css.map */

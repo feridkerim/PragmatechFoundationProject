@@ -297,7 +297,13 @@ header .main-top .accaunt .our-link ul li a:hover {
   margin: 0 15px;
 }
 
-.header {
+.logoMenyu ul li a:hover {
+  color: brown;
+  -webkit-transition: all .10s ease;
+  transition: all .10s ease;
+}
+
+.banner {
   height: 800px;
   background: url(../img/banner-02.jpg);
   position: relative;
@@ -305,7 +311,7 @@ header .main-top .accaunt .our-link ul li a:hover {
   background-size: cover;
 }
 
-.header .overlay {
+.banner .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
@@ -315,7 +321,7 @@ header .main-top .accaunt .our-link ul li a:hover {
   height: 100%;
 }
 
-.header .content {
+.banner .content {
   width: 100%;
   height: 100%;
   color: white;
@@ -338,7 +344,7 @@ header .main-top .accaunt .our-link ul li a:hover {
           align-items: center;
 }
 
-.header .content .content-middle {
+.banner .content .content-middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,7 +360,7 @@ header .main-top .accaunt .our-link ul li a:hover {
           align-items: center;
 }
 
-.header .content .content-middle span {
+.banner .content .content-middle span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,14 +369,14 @@ header .main-top .accaunt .our-link ul li a:hover {
           justify-content: center;
 }
 
-.header .content .content-middle h1 {
+.banner .content .content-middle h1 {
   text-transform: uppercase;
   font-size: 65px;
   font-weight: 900;
   padding: 0 0 10px 0;
 }
 
-.header .content .content-middle button {
+.banner .content .content-middle button {
   background-color: #d33b33;
   border: none;
   color: white;
@@ -380,7 +386,7 @@ header .main-top .accaunt .our-link ul li a:hover {
   height: 60px;
 }
 
-.header .content .content-middle .content-arrows {
+.banner .content .content-middle .content-arrows {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,7 +397,7 @@ header .main-top .accaunt .our-link ul li a:hover {
   position: absolute;
 }
 
-.header .content .content-middle .content-arrows button {
+.banner .content .content-middle .content-arrows button {
   background-color: #d33b33;
   border: none;
   color: white;
@@ -401,44 +407,33 @@ header .main-top .accaunt .our-link ul li a:hover {
   height: 70px;
 }
 
-.container-full {
+.col-3 {
+  width: 350px;
+  height: 350px;
+  border: 1px solid black;
+  margin: 0 auto 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 80px 0 240px 0;
-}
-
-.container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (350px)[3];
-      grid-template-columns: repeat(3, 350px);
-  -ms-grid-rows: (350px)[2];
-      grid-template-rows: repeat(2, 350px);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 70px 0;
-  grid-gap: 25px;
+  position: relative;
 }
 
-.container button {
-  background-color: #d33b33;
+.col-3 button {
+  background: brown;
+  position: absolute;
+  z-index: 1;
   width: 350px;
   height: 45px;
 }
 
-[class^="row-"] {
-  border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.col-3 img {
+  width: 100%;
 }
 
 #product {
@@ -512,50 +507,93 @@ header .main-top .accaunt .our-link ul li a:hover {
 }
 
 #blog {
-  height: 850px;
   margin: 100px 0 0 0;
   background: #f5f5f5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 70px 0;
 }
 
-#blog .container {
-  width: 1120px;
-  height: 630px;
-  border: 1px solid black;
+#blog .item .info p {
+  font-size: 18px;
+  line-height: 26px;
 }
 
-#blog .container .roww-1 h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#blog .row .desc span {
   font-size: 40px;
   margin: 0 0 20px;
+  display: inline-block;
 }
 
-#blog .container .roww-2 {
-  width: 350px;
-  height: 520px;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin: 40px 25px 0 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+#blog .desc {
+  text-align: center;
+}
+
+.col-4 {
+  max-width: 33.333333%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+}
+
+#blog .item .image {
+  padding-bottom: 84%;
+  background-position: center;
+  background-size: cover;
+}
+
+#blog .item {
+  margin: 30px 15px 0;
+}
+
+#blog .item .info {
+  padding: 20px 20px 20px 45px;
+  background: white;
+}
+
+#blog .item .info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#blog .info .icons {
+  position: absolute;
+  top: 0;
+  left: -45px;
+  background: black;
+  padding: 7px;
+}
+
+#blog .info .icons span {
+  color: white;
+  font-size: 19px;
+}
+
+#blog .info .icons li {
+  margin-bottom: 10px;
+}
+
+#blog .info .icons li:last-child {
+  margin-bottom: 0;
+}
+
+#blog .shortDesc {
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

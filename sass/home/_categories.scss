@@ -1,48 +1,22 @@
-
-.container-full{
+.col-3{
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 0 auto 40px;
     display: flex;
-    margin: 80px 0 240px 0;
-}
-
-
-.container{
-    display: grid;
-    grid-template-columns: repeat(3, 350px);
-    grid-template-rows: repeat(2, 350px);
+    align-items: flex-end;
     justify-content: center;
-    margin: 70px 0;
-    grid-gap: 25px;
+    position: relative;
 }
 
-.container button{
-    background-color:$main-color;
+.col-3 button{
+    background: brown;
+    position: absolute;
+    z-index: 1;
     width: 350px;
     height: 45px;
 }
 
-[class^="row-"]{
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-
-
-.row-1{
-
-}
-.row-2{
-
-}
-.row-3{
-
-}
-.row-4{
-}
-.row-5{
-
-}
-.row-6{
-
+.col-3 img{
+    width: 100%;
 }

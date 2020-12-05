@@ -29,3 +29,6 @@ Lahiyə 5 hissədən ibarət olacaq:
 
 # Day05
 - categories bolmesinde grid-den istifade olundu
+
+# Day06
+- categories ve lates tblog bolmesinde deyisiklikler edildi 

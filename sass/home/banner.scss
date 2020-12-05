@@ -1,0 +1,66 @@
+$main-color:#d33b33;
+
+.banner {
+	height: 800px;
+	background: url(../img/banner-02.jpg);
+	position: relative;
+	z-index: 0;
+    background-size: cover;
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;}
+    .content {
+        width: 100%;
+        height: 100%;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .content-middle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            span {
+                display: flex;
+                justify-content: center;}
+            h1 {
+                text-transform: uppercase;
+                font-size: 65px;
+                font-weight: 900;
+                padding: 0 0 10px 0;}
+            button {
+                background-color: $main-color;
+                border: none;
+                color: white;
+                font-size: 24px;
+                text-transform: uppercase;
+                width: 160px;
+                height: 60px;}
+            .content-arrows {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                button {
+                    background-color: $main-color;
+                    border: none;
+                    color: white;
+                    font-size: 45px;
+                    text-transform: uppercase;
+                    width: 70px;
+                    height: 70px;}
+            }
+        }
+    }    
+}
