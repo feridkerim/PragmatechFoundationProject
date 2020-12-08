@@ -144,7 +144,7 @@ a img,
   clear: both;
 }
 
-header .main-top .shopnow, header .main-top .accaunt, header .main-top .accaunt .custom-select-box, header .main-top .accaunt .right-phone-box, .logoMenyu {
+header .main-top .shopnow, header .main-top .accaunt, header .main-top .accaunt .custom-select-box, header .main-top .accaunt .right-phone-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,7 +165,7 @@ header .main-top {
           justify-content: space-between;
 }
 
-header .main-top .shopnow, header .main-top .accaunt, header .main-top .accaunt .custom-select-box, header .main-top .accaunt .right-phone-box, .logoMenyu {
+header .main-top .shopnow, header .main-top .accaunt, header .main-top .accaunt .custom-select-box, header .main-top .accaunt .right-phone-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,6 +225,8 @@ header .main-top .accaunt .right-phone-box p a {
 
 header .main-top .accaunt .right-phone-box p a:hover {
   color: #d33b33;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 header .main-top .accaunt .our-link {
@@ -259,48 +261,78 @@ header .main-top .accaunt .our-link ul li a {
 
 header .main-top .accaunt .our-link ul li a:hover {
   color: #d33b33;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
-.logoMenyu {
-  width: 1208px;
-  height: 115px;
-  margin: 0 auto;
+.logomenyu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
 }
 
-.logoMenyu #zem {
-  color: black;
-  display: inline-block;
+.logomenyu > .row {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logomenyu > .row > .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 32px;
+  font-size: xx-large;
+  color: #1f1f1f;
 }
 
-.logoMenyu span {
-  color: black;
-  margin: 0 7px;
+.logomenyu > .row > .logo a:hover {
+  color: darkgreen;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
-.logoMenyu ul {
-  display: inline-block;
-  margin: 0px 0px 0 388px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.logomenyu .menyu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.logoMenyu ul li {
-  display: inline-block;
-  margin: 0 15px;
+.logomenyu .menyu a {
+  color: #1f1f1f;
 }
 
-.logoMenyu ul li a:hover {
-  color: brown;
-  -webkit-transition: all .10s ease;
-  transition: all .10s ease;
+.logomenyu .menyu a:hover {
+  color: #d33b33;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.logomenyu .menyu > a {
+  margin-right: 40px;
+}
+
+.logomenyu .menyu > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logomenyu .menyu > ul > li {
+  margin-right: 40px;
 }
 
 .banner {
@@ -360,6 +392,11 @@ header .main-top .accaunt .our-link ul li a:hover {
           align-items: center;
 }
 
+.banner .content .content-middle > p {
+  padding: 30px;
+  font-size: 22px;
+}
+
 .banner .content .content-middle span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,9 +408,8 @@ header .main-top .accaunt .our-link ul li a:hover {
 
 .banner .content .content-middle h1 {
   text-transform: uppercase;
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 900;
-  padding: 0 0 10px 0;
 }
 
 .banner .content .content-middle button {
@@ -384,6 +420,13 @@ header .main-top .accaunt .our-link ul li a:hover {
   text-transform: uppercase;
   width: 160px;
   height: 60px;
+  cursor: pointer;
+}
+
+.banner .content .content-middle button:hover {
+  background: black;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .banner .content .content-middle .content-arrows {
@@ -405,6 +448,13 @@ header .main-top .accaunt .our-link ul li a:hover {
   text-transform: uppercase;
   width: 70px;
   height: 70px;
+  cursor: pointer;
+}
+
+.banner .content .content-middle .content-arrows button:hover {
+  background: black;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .col-3 {
@@ -595,5 +645,100 @@ header .main-top .accaunt .our-link ul li a:hover {
 
 #blog .shortDesc {
   position: relative;
+}
+
+#instagram .container {
+  width: 100%;
+  background: black;
+  padding: 50px 0;
+}
+
+#instagram .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+#instagram .container .col {
+  width: 240px;
+  height: 240px;
+}
+
+.col img {
+  width: 100%;
+}
+
+#instagram .container .arrows-prev button {
+  font-size: x-large;
+  background: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+#instagram .container .arrows-prev button:hover {
+  background: red;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#instagram .container .arrows-next button {
+  font-size: x-large;
+  background: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+#instagram .container .arrows-next button:hover {
+  background: red;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#footer {
+  background: #202020;
+}
+
+#footer .container .row1 .col-4 {
+  height: 350px;
+  border: 1px solid red;
+  color: white;
+}
+
+#footer .container .row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

@@ -31,4 +31,7 @@ Lahiyə 5 hissədən ibarət olacaq:
 - categories bolmesinde grid-den istifade olundu
 
 # Day06
-- categories ve lates tblog bolmesinde deyisiklikler edildi 
+- categories ve lates tblog bolmesinde deyisiklikler edildi
+
+# Day07
+- footer bolmesi elave olundu

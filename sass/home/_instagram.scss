@@ -1,0 +1,61 @@
+#instagram .container{
+    width: 100%;
+    background: black;
+    padding: 50px 0;
+}
+
+#instagram .container .row{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#instagram .container .col{
+    width: 240px;
+    height: 240px;
+}
+
+.col img{
+    width: 100%;
+}
+
+
+
+#instagram .container .arrows-prev button{
+    font-size: x-large;
+    background:black;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover{
+        background: red;
+        transition: all .3s ease-in-out;
+    }
+}
+
+#instagram .container .arrows-next button{
+    font-size: x-large;
+    background:black;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover{
+        background: red;
+        transition: all .3s ease-in-out;
+    }
+}
+
