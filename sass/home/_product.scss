@@ -7,11 +7,17 @@
         align-items: center;
         button {
             padding: 10px 20px;
-            background-color: #d33b33;
+            background-color:$main-color1;
             border: none;
             color: white;
             font-size: 20px;
             margin: 20px 0 0 0;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            &:hover{
+                background: $main-color2;
+                
+            }
         }
 }   }    
 
@@ -32,18 +38,53 @@
 .best .sale{
     width: 53px;
     height: 30px;
-    background: red;
+    background: $main-color1;
     color: white;
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 1;
 }
 
 .best .box{
     width: 255px;
-    height: 415px;
+    height: 440px;
     display: flex;
     align-items: flex-end;
     position: relative;
     margin: 45px 25px 0 0;
+    &:hover .box-hover{
+        bottom: 0;
+        height: 100%;
+    }
+    img{
+        position: absolute;
+        z-index: 0;
+        top: 0;
+    }
+    
+}
+
+
+.best .box .box-hover{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background: rgba($main-color2, 0.5);
+    overflow: hidden;
+    width: 100%;
+    transition: all .5s ease-out;
+    ul{
+        position: absolute;
+        background: $main-color1;
+        width: 39px;
+        font-size: 19px;
+        line-height: 35px;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        
+    }
+    
 }

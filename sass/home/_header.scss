@@ -7,7 +7,7 @@ $main-color:#d33b33;
 header{
     .main-top {
         height: 50px;
-        background-color: black;
+        background-color: $main-color2;
         color: white;
         @extend %flex-align-items-space-between;
         .shopnow {
@@ -39,7 +39,7 @@ header{
                         color: #ffffff;
                         text-decoration: none;
                         &:hover{
-                            color: #d33b33;
+                            color: $main-color1;
                             transition: all .3s ease-in-out;
                         }
                     }
@@ -62,7 +62,7 @@ header{
                             font-size: 14px;
                             text-decoration: none;
                             &:hover{
-                                color: #d33b33;
+                                color: $main-color1;
                                 transition: all .3s ease-in-out;                              
                            }   
                         }   

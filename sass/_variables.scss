@@ -1,5 +1,6 @@
 
-$main-color:#d33b33;
+$main-color1:#d33b33;
+$main-color2:black;
 
 %flex-align-items-center{
     display: flex;
@@ -10,4 +11,11 @@ $main-color:#d33b33;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+%flex-direction-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

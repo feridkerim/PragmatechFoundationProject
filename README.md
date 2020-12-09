@@ -35,3 +35,6 @@ Lahiyə 5 hissədən ibarət olacaq:
 
 # Day07
 - footer bolmesi elave olundu
+
+# Day09
+-footer bolmesinde ve umumi sehifede elaver olundu

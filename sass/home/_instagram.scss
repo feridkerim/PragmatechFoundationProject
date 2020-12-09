@@ -1,6 +1,6 @@
 #instagram .container{
     width: 100%;
-    background: black;
+    background: $main-color2;
     padding: 50px 0;
 }
 
@@ -23,7 +23,7 @@
 
 #instagram .container .arrows-prev button{
     font-size: x-large;
-    background:black;
+    background:$main-color2;
     color: white;
     position: absolute;
     top: 0;
@@ -35,14 +35,14 @@
     justify-content: center;
     cursor: pointer;
     &:hover{
-        background: red;
+        background: $main-color1;
         transition: all .3s ease-in-out;
     }
 }
 
 #instagram .container .arrows-next button{
     font-size: x-large;
-    background:black;
+    background:$main-color2;
     color: white;
     position: absolute;
     top: 0;
@@ -54,7 +54,7 @@
     justify-content: center;
     cursor: pointer;
     &:hover{
-        background: red;
+        background: $main-color1;
         transition: all .3s ease-in-out;
     }
 }
