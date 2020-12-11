@@ -62,18 +62,28 @@
     position: absolute;
     top: 0;
     left: -45px;
-    background: $main-color2;
-    padding: 7px;
+    cursor: pointer;
+
 }
 
 #blog .info .icons span {
     color: white;
-    font-size: 19px;
+    font-size: 21px;
 }
 
 #blog .info .icons li {
-    margin-bottom: 10px;
+    width: 34px;
+    height: 34px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        background: $main-color1;
+        transition: all .3s ease-out;
+    }
 }
+
 
 #blog .info .icons li:last-child {
     margin-bottom: 0;
@@ -81,3 +91,4 @@
 #blog .shortDesc{
     position: relative;
 }
+

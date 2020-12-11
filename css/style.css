@@ -181,45 +181,8 @@ header .main-top {
           align-items: center;
 }
 
-header .main-top .shopnow, header .main-top .accaunt, header .main-top .accaunt .custom-select-box, header .main-top .accaunt .right-phone-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 header .main-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.banner .content, .banner .content .content-middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .main-top {
-  height: 50px;
+  height: 60px;
   background-color: black;
   color: white;
 }
@@ -232,7 +195,7 @@ header .main-top .accaunt .custom-select-box {
   background-color: #d33b33;
   width: 100px;
   height: 30px;
-  margin: 10px;
+  margin-left: 10px;
 }
 
 header .main-top .accaunt .right-phone-box {
@@ -367,19 +330,53 @@ header .main-top .accaunt .our-link ul li a:hover {
   margin-right: 40px;
 }
 
+.banner .slider-button {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .slider-button ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner .slider-button ul li {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ffffff;
+  margin: 0 3px 3px;
+}
+
 .banner {
-  height: 800px;
   position: relative;
   z-index: 0;
   background-size: cover;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .banner .banner-foto img {
   width: 100%;
   background-size: cover;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  position: relative;
+  left: 0px;
 }
 
 .banner .overlay {
@@ -595,6 +592,16 @@ header .main-top .accaunt .our-link ul li a:hover {
   top: 0;
   right: 0;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 15px;
 }
 
 .best .box {
@@ -642,6 +649,13 @@ header .main-top .accaunt .our-link ul li a:hover {
   text-align: center;
   color: white;
   font-weight: 700;
+}
+
+.best .box .box-hover ul li:hover {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background: black;
+  cursor: pointer;
 }
 
 #blog {
@@ -714,17 +728,33 @@ header .main-top .accaunt .our-link ul li a:hover {
   position: absolute;
   top: 0;
   left: -45px;
-  background: black;
-  padding: 7px;
+  cursor: pointer;
 }
 
 #blog .info .icons span {
   color: white;
-  font-size: 19px;
+  font-size: 21px;
 }
 
 #blog .info .icons li {
-  margin-bottom: 10px;
+  width: 34px;
+  height: 34px;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#blog .info .icons li:hover {
+  background: #d33b33;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 #blog .info .icons li:last-child {
@@ -891,6 +921,10 @@ header .main-top .accaunt .our-link ul li a:hover {
 
 .footer-contact ul {
   line-height: 40px;
+}
+
+.footer-contact ul li a:hover {
+  color: #d33b33;
 }
 
 .footer-copyright {

@@ -1,16 +1,41 @@
-$main-color:#d33b33;
+
+
+.banner .slider-button{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    ul{
+        display: flex;
+        li{
+            width: 30px;
+            height: 30px;
+            border: 2px solid #ffffff;
+            margin: 0 3px 3px;
+        }
+    }
+
+}
 
 .banner {
-	height: 800px;
 	position: relative;
 	z-index: 0;
     background-size: cover;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
     .banner-foto img{
     width: 100%;
     background-size: cover;
-    transform: translateX(0);
+    position: relative;
+    left: 0px;
+
+
+    
 }
+
     
     .overlay {
         background-color: rgba($main-color2, 0.5);
@@ -43,7 +68,7 @@ $main-color:#d33b33;
                 font-size: 55px;
                 font-weight: 900}
             button {
-                background-color: $main-color;
+                background-color: $main-color1;
                 border: none;
                 color: white;
                 font-size: 24px;
@@ -62,7 +87,7 @@ $main-color:#d33b33;
                 justify-content: space-between;
                 position: absolute;
                 button {
-                    background-color: $main-color;
+                    background-color: $main-color1;
                     border: none;
                     color: white;
                     font-size: 45px;
