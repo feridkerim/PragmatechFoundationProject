@@ -37,7 +37,10 @@ Lahiyə 5 hissədən ibarət olacaq:
 - footer bolmesi elave olundu
 
 # Day09
-- footer bolmesinde ve umumi sehifede elavelerr olundu
+- footer bolmesinde ve umumi sehifede elaveler olundu
 
 # Day10
 - Home page  deyisikler edildi ve elaveler olundu
+
+# Day11
+- Abut sehifesi yaradildi

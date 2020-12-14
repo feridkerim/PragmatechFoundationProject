@@ -116,8 +116,24 @@ header{
 }
 
 
+header .search-bar{
+    background: black;
+}
 
-
+header .search-panel{
+    height: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input{
+        width: 94%;
+        height: 60%;
+        background: transparent;
+        color: white;
+    }
+    
+}
 
 
 

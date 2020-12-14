@@ -330,6 +330,31 @@ header .main-top .accaunt .our-link ul li a:hover {
   margin-right: 40px;
 }
 
+header .search-bar {
+  background: black;
+}
+
+header .search-panel {
+  height: 70px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .search-panel input {
+  width: 94%;
+  height: 60%;
+  background: transparent;
+  color: white;
+}
+
 .banner .slider-button {
   position: absolute;
   z-index: 9;
@@ -370,6 +395,12 @@ header .main-top .accaunt .our-link ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.banner .banner-foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .banner .banner-foto img {
@@ -462,6 +493,10 @@ header .main-top .accaunt .our-link ul li a:hover {
   background: black;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+.bannerItem {
+  width: 100%;
 }
 
 .col-3 {
@@ -615,22 +650,29 @@ header .main-top .accaunt .our-link ul li a:hover {
           align-items: flex-end;
   position: relative;
   margin: 45px 25px 0 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .best .box:hover .box-hover {
   bottom: 0;
-  height: 100%;
 }
 
-.best .box img {
-  position: absolute;
-  z-index: 0;
-  top: 0;
+.best .box .image {
+  position: relative;
+}
+
+.best .box .image img {
+  width: 100%;
+  height: 100%;
 }
 
 .best .box .box-hover {
   position: absolute;
   bottom: 100%;
+  top: 0;
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -638,6 +680,33 @@ header .main-top .accaunt .our-link ul li a:hover {
   width: 100%;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
+}
+
+.best .box .box-hover .add-cart {
+  width: 120px;
+  height: 50px;
+  background: #d33b33;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f5f5f5;
+  font-size: 18px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.best .box .box-hover .add-cart:hover {
+  background: black;
+  cursor: pointer;
 }
 
 .best .box .box-hover ul {
@@ -651,9 +720,12 @@ header .main-top .accaunt .our-link ul li a:hover {
   font-weight: 700;
 }
 
-.best .box .box-hover ul li:hover {
+.best .box .box-hover ul li {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+.best .box .box-hover ul li:hover {
   background: black;
   cursor: pointer;
 }
@@ -749,12 +821,31 @@ header .main-top .accaunt .our-link ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+#blog .info .icons li p {
+  position: absolute;
+  right: -95px;
+  background-color: rgba(211, 59, 51, 0.9);
+  color: white;
+  padding: 10px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  opacity: 0;
+  visibility: hidden;
+  width: 74px;
+  text-align: center;
 }
 
 #blog .info .icons li:hover {
   background: #d33b33;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+}
+
+#blog .info .icons li:hover p {
+  opacity: 1;
+  visibility: visible;
 }
 
 #blog .info .icons li:last-child {
@@ -937,5 +1028,133 @@ header .main-top .accaunt .our-link ul li a:hover {
           justify-content: center;
   padding: 20px 0;
   color: #d33b33;
+}
+
+#banner-about .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+#banner-about {
+  background: url(../img/all-bg-title.jpg);
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#banner-about img {
+  width: 100%;
+}
+
+.title {
+  color: white;
+  position: absalute;
+  z-index: 2;
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.title div {
+  background: #d33b33;
+  width: 200px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+}
+
+#about {
+  margin: 70px 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.container .col-6 {
+  width: 550px;
+}
+
+.container .col-6 p {
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 0 10px 0 0;
+}
+
+.container .col-6 h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.container .col-6 img {
+  width: 100%;
+  padding: 0 0 0 30px;
+}
+
+.container .row .coll-4 {
+  margin-left: 45px;
+  margin-top: 70px;
+  width: 330px;
+  height: 150px;
+  position: relative;
+}
+
+.container .row .coll-4:hover .col-4-hover {
+  background: #d33b33;
+}
+
+.container .row .coll-4 .text {
+  margin: 10px 0 0 15px;
+}
+
+.container .row .coll-4 .text p {
+  font-size: 18px;
+  line-height: 25px;
+  padding: 5px 50px 0 0;
+}
+
+.container .row .coll-4 .text h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.col-4-hover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: black;
+  width: 5px;
+  height: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 /*# sourceMappingURL=style.css.map */
