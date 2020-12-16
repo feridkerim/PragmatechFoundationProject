@@ -43,4 +43,14 @@ Lahiyə 5 hissədən ibarət olacaq:
 - Home page  deyisikler edildi ve elaveler olundu
 
 # Day11
-- Abut sehifesi yaradildi
+- About sehifesi yaradildi
+
+# Day12
+- Cart sehifesi yaradildi
+- home sehifesinde banner section-da slider duzeldidi
+
+
+
+
+
+
