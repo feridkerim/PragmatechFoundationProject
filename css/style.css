@@ -1093,17 +1093,215 @@ header .search-panel input {
   transition: .5s ease;
 }
 
-.cart .col-12 .title {
-  color: white;
+.cart .row-head {
+  background-color: #d33b33;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background: #d33b33;
-  height: 70px;
+  color: white;
+  margin-top: 70px;
+}
+
+.cart .row-head .col-2 {
+  padding: 20px 0 20px 0;
+  width: 12%;
+}
+
+.cart .row-head .col-2:nth-child(1) {
+  padding-left: 10px;
+}
+
+.cart .row-head .col-2:nth-child(4) {
+  width: 40%;
+}
+
+.cart .row-head .col-2:nth-child(2) {
+  width: 40%;
+}
+
+.cart .row-body .col-2 img {
+  width: 100px;
+}
+
+.cart .row-body .col-2 {
+  width: 12%;
+}
+
+.cart .row-body .col-2:nth-child(1) {
+  padding-left: 10px;
+}
+
+.cart .row-body .col-2:nth-child(4) {
+  width: 40%;
+}
+
+.cart .row-body .col-2:nth-child(2) {
+  width: 40%;
+}
+
+.cart .row-body .col-2:nth-last-child(1) {
+  text-align: center;
+}
+
+.cart .row-body .col-2 i {
+  cursor: pointer;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.cart .row-body .col-2 i:hover {
+  color: #d33b33;
+}
+
+.cart .row-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 1px solid lightgray;
+  padding-top: 15px;
+}
+
+.cart .row-body .col-2 span i {
+  text-align: center;
+}
+
+.cart .row-body .col-2 input {
+  text-align: center;
+  border: 3px solid gray;
+}
+
+.to-order .col-8 {
+  width: 70%;
+}
+
+.to-order .col-4 {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.to-order .col-4 button {
+  padding: 20px 18px;
+  background-color: #dd3333;
+  color: white;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  cursor: pointer;
+}
+
+.to-order .col-4 button:hover {
+  background-color: black;
+}
+
+.to-order .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 70px 0;
+}
+
+.to-order .col-4 .text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.contact .col-4 {
+  background: #0035441a;
+  height: 390px;
+}
+
+.contact .col-4 p {
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.contact .col-4 p i {
+  color: #d33b33;
+}
+
+.contact .col-4 p span {
+  padding-right: 15px;
+}
+
+.contact .col-4 p a {
+  color: black;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.contact .col-4 p a:hover {
+  color: #d33b33;
+}
+
+.contact .col-4 h2 {
+  padding: 15px 15px 0;
+  font-size: 30px;
+}
+
+.contact .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 70px 0;
+}
+
+.contact .col-8 {
+  margin-left: 50px;
+}
+
+.contact .col-8 p {
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.contact .col-8 h2 {
+  font-size: 30px;
+}
+
+.form-control input, textarea {
+  border: 1px solid lightgray;
+  margin-bottom: 50px;
+  width: 100%;
+  padding: 15px 0 15px 10px;
+}
+
+.form-control textarea {
+  padding: 15px 0 50px 10px;
+}
+
+.form-control .send {
+  text-align: center;
+}
+
+.form-control .send button {
+  color: white;
+  padding: 20px;
+  background-color: #d33b33;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  cursor: pointer;
+}
+
+.form-control .send button:hover {
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */

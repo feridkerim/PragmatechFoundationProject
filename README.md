@@ -49,6 +49,10 @@ Lahiyə 5 hissədən ibarət olacaq:
 - Cart sehifesi yaradildi
 - home sehifesinde banner section-da slider duzeldidi
 
+# Day13
+- Cart sehifesinde duzelis edildi ve elaveler olundu
+- contact us sehifesi yaradildi
+
 
 
 

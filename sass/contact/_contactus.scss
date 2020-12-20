@@ -1,0 +1,74 @@
+.contact .col-4{
+    background: #0035441a;
+    height: 390px;
+}
+
+.contact .col-4 p{
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 25px;
+    i{
+        color: $main-color1;
+    }
+    span{
+        padding-right: 15px;
+    }
+}
+.contact .col-4 p a{
+    color: black;
+    transition: all .3s linear;
+    &:hover{
+        color: $main-color1;
+    }
+}
+
+.contact .col-4 h2{
+    padding: 15px 15px 0;
+    font-size: 30px;
+}
+
+.contact .row{
+    flex-wrap: nowrap;
+    margin: 70px 0;
+}
+
+.contact .col-8{
+    margin-left: 50px;
+}
+
+.contact .col-8 p{
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.contact .col-8 h2{
+    font-size: 30px;
+}
+
+.form-control input, textarea{
+    border: 1px solid lightgray;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 15px 0 15px 10px;
+}
+
+.form-control textarea{
+    padding: 15px 0 50px 10px;
+}
+
+
+.form-control .send{
+    text-align: center;
+}
+
+.form-control .send button{
+    color: white;
+    padding: 20px;
+    background-color: $main-color1;
+    transition: all .3s linear;
+    cursor: pointer;
+    &:hover{
+        background-color: black;
+    }
+}

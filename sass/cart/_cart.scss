@@ -1,13 +1,70 @@
-.cart .col-12 .title h3{
-
-}
-
-.cart .col-12 .title{
-    color: white;
+.cart .row-head {
+    background-color: $main-color1;
     display: flex;
-    justify-content: space-around;
-    background: $main-color1;
-    height: 70px;
-    align-items: center;
+    color: white;
+    margin-top: 70px;
 }
+
+.cart .row-head .col-2{
+    padding: 20px 0 20px 0;
+    width: 12%;
+    &:nth-child(1){
+        padding-left: 10px;
+    }
+    &:nth-child(4){
+        width: 40%;
+    }
+    &:nth-child(2){
+        width: 40%;
+    }
+}
+
+.cart .row-body .col-2 img{
+    width: 100px;
+}
+
+.cart .row-body .col-2{
+    width: 12%;
+    &:nth-child(1){
+        padding-left: 10px;
+    }
+    
+    &:nth-child(4){
+        width: 40%;
+    }
+    &:nth-child(2){
+        width: 40%;
+    }
+}
+
+.cart .row-body .col-2 {
+    &:nth-last-child(1){
+        text-align: center;
+    }
+}
+
+.cart .row-body .col-2 i{
+    cursor: pointer;
+    transition: all .3s linear;
+    &:hover{
+        color: $main-color1;
+    }
+}
+
+.cart .row-body {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid lightgray;
+    padding-top: 15px;
+}
+
+.cart .row-body .col-2 span i{
+    text-align: center;
+}
+
+.cart .row-body .col-2 input{
+    text-align: center;
+    border: 3px solid gray;
+}
+
 
