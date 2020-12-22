@@ -1,0 +1,132 @@
+$spacing-1x:10px;
+$spacing-2x:$spacing-1x*2;
+$spacing-3x:$spacing-1x*3;
+$spacing-4x:$spacing-1x*4;
+
+
+@for $i from 1 through 7 {
+    .m-#{$i} {
+        margin: $spacing-1x*$i
+    }
+    .mt-#{$i} {
+        margin-top: $spacing-1x*$i
+    }
+    .mb-#{$i} {
+        margin-bottom: $spacing-1x*$i
+    }
+    .ml-#{$i} {
+        margin-left: $spacing-1x*$i
+    }
+    .mr-#{$i} {
+        margin-right: $spacing-1x*$i
+    }
+    .mx-#{$i} {
+        margin: 0px $spacing-1x*$i
+    }
+    .my-#{$i} {
+        margin: $spacing-1x*$i 0px;
+    }
+}
+
+// f for plus $spacing-1x margin
+
+@for $i from 1 through 7 {
+    .m-f-#{$i} {
+        margin: $spacing-1x+$i
+    }
+    .mt-f-#{$i} {
+        margin-top: $spacing-1x+$i
+    }
+    .mb-f-#{$i} {
+        margin-bottom: $spacing-1x+$i
+    }
+    .ml-f-#{$i} {
+        margin-left: $spacing-1x+$i
+    }
+    .mr-f-#{$i} {
+        margin-right: $spacing-1x+$i
+    }
+    .mx-f-#{$i} {
+        margin: 0px $spacing-1x+$i
+    }
+    .my-f-#{$i} {
+        margin: $spacing-1x+$i 0px;
+    }
+}
+
+// s for plus $spacing-2x margin
+
+@for $i from 1 through 7 {
+    .m-s-#{$i} {
+        margin: $spacing-2x+$i
+    }
+    .mt-s-#{$i} {
+        margin-top: $spacing-2x+$i
+    }
+    .mb-s-#{$i} {
+        margin-bottom: $spacing-2x+$i
+    }
+    .ml-s-#{$i} {
+        margin-left: $spacing-2x+$i
+    }
+    .mr-s-#{$i} {
+        margin-right: $spacing-2x+$i
+    }
+    .mx-s-#{$i} {
+        margin: 0px $spacing-2x+$i
+    }
+    .my-s-#{$i} {
+        margin: $spacing-2x+$i 0px;
+    }
+    
+}
+
+// padding 
+@for $i from 1 through 7 {
+    .p-#{$i} {
+        padding: $spacing-1x*$i
+    }
+    .pt-#{$i} {
+        padding-top: $spacing-1x*$i
+    }
+    .pb-#{$i} {
+        padding-bottom: $spacing-1x*$i
+    }
+    .pl-#{$i} {
+        padding-left: $spacing-1x*$i
+    }
+    .pr-#{$i} {
+        padding-right: $spacing-1x*$i
+    }
+    .px-#{$i} {
+        padding: 0px $spacing-1x*$i !important
+    }
+    .py-#{$i} {
+        padding: $spacing-1x*$i 0px !important;
+    }
+}
+// s for plus $sapcing-2x padding
+
+@for $i from 1 through 7 {
+    .p-s-#{$i} {
+        padding: $spacing-2x+$i
+    }
+    .pt-s-#{$i} {
+        padding-top: $spacing-2x+$i
+    }
+    .pb-s-#{$i} {
+        padding-bottom: $spacing-2x+$i
+    }
+    .pl-s-#{$i} {
+        padding-left: $spacing-2x+$i
+    }
+    .pr-s-#{$i} {
+        padding-right: $spacing-2x+$i
+    }
+    .px-s-#{$i} {
+        padding: 0px $spacing-2x+$i !important
+    }
+    .py-s-#{$i} {
+        padding: $spacing-2x+$i 0px !important;
+    }
+}

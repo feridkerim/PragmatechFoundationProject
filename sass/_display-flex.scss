@@ -1,0 +1,57 @@
+
+
+%flex-align-items-center{
+    display: flex;
+	align-items: center;
+}
+
+%flex-align-items-space-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%flex-direction-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+%flex-justify-space-betwween{
+    display: flex;
+    justify-content: space-between;
+}
+
+%flex-justify-center-align-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%flex-end-justify-center{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+%flex-align-flex-end{
+    display: flex;
+    align-items: flex-end;
+}
+
+%flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+%flex-justify-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}

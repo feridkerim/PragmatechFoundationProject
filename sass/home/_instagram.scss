@@ -5,8 +5,7 @@
 }
 
 #instagram .container .row{
-    display: flex;
-    justify-content: center;
+    @extend %flex-justify-center;
     position: relative;
 }
 
@@ -24,15 +23,13 @@
 #instagram .container .arrows-prev button{
     font-size: x-large;
     background:$main-color2;
-    color: white;
+    color: $main-color3;
     position: absolute;
     top: 0;
     left: 0;
     width: 50px;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-justify-center-align-center;
     cursor: pointer;
     &:hover{
         background: $main-color1;
@@ -43,19 +40,17 @@
 #instagram .container .arrows-next button{
     font-size: x-large;
     background:$main-color2;
-    color: white;
+    color: $main-color3;
     position: absolute;
     top: 0;
     right: 0;
     width: 50px;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-justify-center-align-center;
     cursor: pointer;
+    transition: all .3s ease-in-out;
     &:hover{
         background: $main-color1;
-        transition: all .3s ease-in-out;
     }
 }
 

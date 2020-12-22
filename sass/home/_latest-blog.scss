@@ -2,7 +2,7 @@
 
 #blog {
 	margin: 100px 0 0 0;
-    background: #f5f5f5;
+    background: $main-color4;
     padding: 70px 0;
 	}
 
@@ -22,8 +22,7 @@
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
+    @extend %flex-wrap;
 }
 
 .col-12 {
@@ -50,7 +49,7 @@
 
 #blog .item .info {
     padding: 20px 20px 20px 45px;
-    background: white;
+    background: $main-color3;
 }
 
 #blog .item .info h3 {
@@ -67,23 +66,21 @@
 }
 
 #blog .info .icons span {
-    color: white;
+    color: $main-color3;
     font-size: 21px;
 }
 
 #blog .info .icons li {
     width: 34px;
     height: 34px;
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: $main-color2;
+    @extend %flex-justify-center-align-center;
     transition: all .3s ease-out;
     p{
         position: absolute;
         right: -95px;
         background-color: rgba($main-color1, 0.9);
-        color: white;
+        color: $main-color3;
         padding: 10px;
         transition: .3s linear;
         opacity: 0;

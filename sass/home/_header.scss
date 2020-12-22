@@ -7,7 +7,7 @@ header{
     .main-top {
         height: 60px;
         background-color: $main-color2;
-        color: white;
+        color:$main-color3;
         @extend %flex-align-items-space-between;
         .shopnow {
             font-size: 15px;
@@ -22,24 +22,21 @@ header{
                 background-color: $main-color1;
                 width: 100px;
                 height: 30px;
-                margin-left: 10px;
+                @extend .ml-1;
             }
             .right-phone-box {
-                margin-left: 10px;
-                padding: 3px 0 0 0;
+                @extend .ml-1;
                 @extend %flex-align-items-center;
                 p {
-                    margin: 0px;
-                    color: #ffffff;
+                    color:$main-color3;
                     font-size: 14px;
-                    line-height: 30px;
                     align-items: center;
                      a {
-                        color: #ffffff;
+                        color: $main-color3;
                         text-decoration: none;
+                        transition: all .3s ease-in-out;
                         &:hover{
                             color: $main-color1;
-                            transition: all .3s ease-in-out;
                         }
                     }
                 }
@@ -47,22 +44,20 @@ header{
             .our-link {
                 display: flex;
                 ul {
-                    line-height: 30px;
-                    display: flex;
-                    align-items: center;
+                    @extend %flex-align-items-center;
                     li {
-                        border-right: 1px solid #ffffff;
-                        padding: 0px 10px;
+                        border-right: 1px solid $main-color3;
+                        @extend .px-1;
                         line-height: 14px;
                         a {
-                            color: #ffffff;
+                            color: $main-color3;
                             font-weight: 700;
                             text-transform: uppercase;
                             font-size: 14px;
                             text-decoration: none;
+                            transition: all .3s ease-in-out; 
                             &:hover{
-                                color: $main-color1;
-                                transition: all .3s ease-in-out;                              
+                                color: $main-color1;                             
                            }   
                         }   
                     }
@@ -73,41 +68,37 @@ header{
 }
 
 .logo-menyu{
-    display: flex;
-    justify-content: center;
-    padding: 15px;
+    @extend %flex-justify-center;
+    @extend .py-1;
     >.row{
         width: 1200px;
-        display: flex;
-        justify-content: space-between;
+        @extend %flex-justify-space-betwween;
         >.logo a{
-            display: flex;
-            align-items: center;
+            @extend %flex-align-items-center;
             font-size: xx-large;
-            color:#1f1f1f;
+            color:$main-color2;
+            transition: all .3s ease-in-out;
             &:hover{
-                color: darkgreen;
-                transition: all .3s ease-in-out;
+                color: $main-color1;
             }
             }
         }
     .menyu{
-        display: flex;
-        align-items: center;
+        @extend %flex-align-items-center;
         a{
-            color:#1f1f1f ;
+            color:$main-color2;
+            transition: all .3s ease-in-out;
             &:hover{
             color: $main-color1;
-            transition: all .3s ease-in-out;
         }
     }
         >a{
-            margin-right: 40px;
+            @extend .mr-4;
         }
         >ul{
             display: flex;
             >li{
-                margin-right: 40px;
+                @extend .mr-4;
             }
         }
     }
@@ -117,20 +108,18 @@ header{
 
 
 header .search-bar{
-    background: black;
+    background: $main-color2;
 }
 
 header .search-panel{
-    height: 70px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 60px;
+    color: $main-color3;
+    @extend %flex-align-items-space-between;
     input{
         width: 94%;
         height: 60%;
         background: transparent;
-        color: white;
+        color: $main-color3;
     }
     
 }

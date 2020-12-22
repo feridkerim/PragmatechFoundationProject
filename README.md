@@ -53,6 +53,9 @@ Lahiyə 5 hissədən ibarət olacaq:
 - Cart sehifesinde duzelis edildi ve elaveler olundu
 - contact us sehifesi yaradildi
 
+# Day14
+- display: flex ve rengler ucun variable ve classlar yaradildi
+- mesafaler ucun classlar yaradildi
 
 
 

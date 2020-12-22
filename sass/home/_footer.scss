@@ -5,7 +5,7 @@
 
 #footer  .container .row1 .col-4{
     /* border: 1px solid red; */
-    color: white;
+    color: $main-color3;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -32,12 +32,11 @@
 
 #footer  .container .row1 .social ul{
     list-style: none;
-    display: flex;
-    justify-content: space-evenly;
+    @extend %flex-justify-space-evenly;
 }
 
 #footer  .container .row1  h3{
-    color: #ffffff;
+    color: $main-color3;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -51,7 +50,7 @@
 
 
 .footer-about  p{
-    color: #cccccc;
+    color: $main-color3;
     font-weight: 400;
     font-size: 17px;
     padding-bottom: 32px;
@@ -63,7 +62,7 @@
 }
 
 #footer  .container .row1 .col-4 ul li a{
-    color: white;
+    color: $main-color3;
 }
 
 .footer-menyu ul{
@@ -82,8 +81,7 @@
 
 .footer-copyright{
     background: #2c2c2c;
-    display: flex;
-    justify-content: center;
+    @extend %flex-justify-center;
     padding: 20px 0;
     color:$main-color1;
 }
