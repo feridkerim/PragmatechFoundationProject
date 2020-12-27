@@ -4,7 +4,8 @@ $spacing-3x:$spacing-1x*3;
 $spacing-4x:$spacing-1x*4;
 
 
-@for $i from 1 through 7 {
+
+@for $i from 1 through 10 {
     .m-#{$i} {
         margin: $spacing-1x*$i
     }
@@ -30,7 +31,7 @@ $spacing-4x:$spacing-1x*4;
 
 // f for plus $spacing-1x margin
 
-@for $i from 1 through 7 {
+@for $i from 1 through 10 {
     .m-f-#{$i} {
         margin: $spacing-1x+$i
     }
@@ -56,7 +57,7 @@ $spacing-4x:$spacing-1x*4;
 
 // s for plus $spacing-2x margin
 
-@for $i from 1 through 7 {
+@for $i from 1 through 10 {
     .m-s-#{$i} {
         margin: $spacing-2x+$i
     }
@@ -82,7 +83,7 @@ $spacing-4x:$spacing-1x*4;
 }
 
 // padding 
-@for $i from 1 through 7 {
+@for $i from 1 through 10 {
     .p-#{$i} {
         padding: $spacing-1x*$i
     }
@@ -107,7 +108,7 @@ $spacing-4x:$spacing-1x*4;
 }
 // s for plus $sapcing-2x padding
 
-@for $i from 1 through 7 {
+@for $i from 1 through 10 {
     .p-s-#{$i} {
         padding: $spacing-2x+$i
     }

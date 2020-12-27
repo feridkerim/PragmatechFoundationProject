@@ -1,0 +1,34 @@
+$main-width:10px;
+$main-width2:$main-width*2;
+$main-width3:$main-width*3;
+$main-width4:$main-width*4;
+
+$main-height:10px;
+$main-height2:$main-height*2;
+$main-height3:$main-height*3;
+$main-height4:$main-height*4;
+
+
+@for $i from 1 through 10 {
+    .main-width-#{$i} {
+        width: $main-width*$i
+    }
+}
+
+@for $i from 1 through 10 {
+    .main-width2-#{$i} {
+        width: $main-width2*$i
+    }
+}
+
+@for $i from 1 through 10 {
+    .main-height-#{$i} {
+        height: $main-height*$i
+    }
+}
+
+@for $i from 1 through 10 {
+    .main-heights-#{$i} {
+        height: $main-height+$i
+    }
+}

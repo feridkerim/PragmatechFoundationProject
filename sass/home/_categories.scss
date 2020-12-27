@@ -1,14 +1,14 @@
-.col-3{
+.categories-item{
     width: 350px;
     height: 350px;
     border: 1px solid $main-color2;
-    margin: 0 auto 40px;
+    margin: 0 13px 40px;
     @extend %flex-end-justify-center;
     position: relative;
     overflow: hidden;
 }
 
-.col-3 a{
+.categories-item a{
     background: $main-color1;
     position: absolute;
     z-index: 1;
@@ -22,7 +22,7 @@
     }
 }
 
-.col-3 img{
+.categories-item img{
     width: 100%;
     transition: all .3s ease-in-out;
     &:hover{
@@ -32,7 +32,7 @@
     }
 }
 
-.col-3 button{
+.categories-item button{
     background: $main-color1;
     position: absolute;
     z-index: 1;

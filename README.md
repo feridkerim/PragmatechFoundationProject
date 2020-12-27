@@ -57,6 +57,10 @@ Lahiyə 5 hissədən ibarət olacaq:
 - display: flex ve rengler ucun variable ve classlar yaradildi
 - mesafaler ucun classlar yaradildi
 
+# Day15
+- product sehifesi yaradildi 
+- filter js kodlari yazildi
+- baner bolmesinde bezi deyisiklikler edildi
 
 
 

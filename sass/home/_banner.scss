@@ -2,11 +2,50 @@
 
 }
 
+.left{
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center !important;
+    margin-left: -50px;
+}
+
+.center{
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+
+
+
+
+  @keyframes fade {
+    from {opacity: .7} 
+    to {opacity: 1}
+  }
 
 .slideshow-container {
     position: relative;
 }
-  
+
+.slideshow-container:nth-child(2) .mySlides .content{
+    text-align: right!important;
+}
   
 .slideshow-container .prev, .next {
     cursor: pointer;
@@ -15,7 +54,7 @@
     @extend .p-s-5;
     color:$main-color3;
     font-weight: bold;
-    font-size: 25px;
+    font-size: $font-size5;
     border-radius: 0 3px 3px 0;
     user-select: none;
     background: $main-color1;
@@ -43,18 +82,20 @@
     top: 0;
     left: 0;
     z-index: 3;
-    @extend %flex-justify-center-align-center;
+    transition: all .5s linear;
+    
 }
           
   
 .content .content-middle{
     text-align: center;
+    transition: all .5s linear;
 }
   
   
 .content-middle p{
     @extend .p-3;
-    font-size: 22px;
+    @extend .font-size-f-2;
 }
   
 .content-middle span {
@@ -63,7 +104,7 @@
   
 .content-middle h1 {
     text-transform: uppercase;
-    font-size: 55px;
+    font-size: 43px;
     font-weight: 900
 }
   
@@ -71,10 +112,9 @@
     background-color: $main-color1;
     border: none;
     color: $main-color3;
-    font-size: 24px;
+    @extend .font-size-f-4;
     text-transform: uppercase;
-    width: 160px;
-    height: 60px;
+    @extend .p-2;
     cursor: pointer;
 }
   

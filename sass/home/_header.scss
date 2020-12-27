@@ -5,12 +5,12 @@
 
 header{
     .main-top {
-        height: 60px;
+        @extend .main-height-6;
         background-color: $main-color2;
         color:$main-color3;
         @extend %flex-align-items-space-between;
         .shopnow {
-            font-size: 15px;
+            font-size:$font-size3;
             @extend %flex-align-items-center;
              
 
@@ -20,8 +20,7 @@ header{
             .custom-select-box{
                 @extend %flex-align-items-center;
                 background-color: $main-color1;
-                width: 100px;
-                height: 30px;
+                @extend .main-width2-5;
                 @extend .ml-1;
             }
             .right-phone-box {
@@ -29,8 +28,7 @@ header{
                 @extend %flex-align-items-center;
                 p {
                     color:$main-color3;
-                    font-size: 14px;
-                    align-items: center;
+                    font-size: $font-size3;
                      a {
                         color: $main-color3;
                         text-decoration: none;
@@ -53,7 +51,7 @@ header{
                             color: $main-color3;
                             font-weight: 700;
                             text-transform: uppercase;
-                            font-size: 14px;
+                            @extend .font-size-9;
                             text-decoration: none;
                             transition: all .3s ease-in-out; 
                             &:hover{
@@ -67,12 +65,19 @@ header{
     }
 }
 
+.logo img{
+    width: 100%;
+}
+
+.logo{
+    width: 120px;
+}
 .logo-menyu{
-    @extend %flex-justify-center;
-    @extend .py-1;
-    >.row{
-        width: 1200px;
-        @extend %flex-justify-space-betwween;
+    .logo-menyu-item{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+    }
         >.logo a{
             @extend %flex-align-items-center;
             font-size: xx-large;
@@ -93,18 +98,18 @@ header{
         }
     }
         >a{
-            @extend .mr-4;
+            @extend .ml-4;
         }
         >ul{
             display: flex;
             >li{
-                @extend .mr-4;
+                @extend .ml-4;
             }
         }
     }
     
     
-}
+
 
 
 header .search-bar{
@@ -112,7 +117,7 @@ header .search-bar{
 }
 
 header .search-panel{
-    height: 60px;
+    @extend .main-height-6;
     color: $main-color3;
     @extend %flex-align-items-space-between;
     input{
