@@ -54,32 +54,85 @@
                             <div class="menyu">
                                 <ul>
                                     <li><a href="index.html">Home</a></span></li>
-                                    <li><a href="product.html">Product</a></li>
+                                    <li>
+                                        <div class="dropdown">
+                                            <button class="dropbtn">Product 
+                                              <i class="fa fa-caret-down"></i>
+                                            </button>
+                                            <div class="dropdown-content">
+                                                <div class="dropdown-content-item">
+                                                    <a href="#">
+                                                        <div class="dropdown-content-middle">
+                                                            <h1>Quranlar</h1>
+                                                            <p><a href="">Sade Quranlar</a></p>
+                                                            <p><a href="">Hediyyelik Quranlar</a></p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div class="dropdown-content-middle">
+                                                            <h1>Kitablar</h1>
+                                                            <p><a href="">Hedisler</a></p>
+                                                            <p><a href="">Exlaq</a></p>
+                                                            <p><a href="">Eqaid</a></p>
+                                                            <p><a href="">Ehkam</a></p>
+                                                            <p><a href="">Mersiyeler</a></p>
+                                                            <p><a href="">Dua kitabi</a></p>
+                                                            <p><a href="">Tarix</a></p>
+                                                            <p><a href="">Dunya Edebiyyati</a></p>
+                                                            <p><a href="">Usaq kitabi</a></p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div class="dropdown-content-middle">
+                                                            <h1>Uzukler</h1>
+                                                            <p><a href="">Eqiq</a></p>
+                                                            <p><a href="">Firuze</a></p>
+                                                            <p><a href="">Hedid-sin</a></p>
+                                                            <p><a href="">Dur-necef</a></p>
+                                                            <p><a href="">Sade</a></p>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#">
+                                                        <div class="dropdown-content-middle">
+                                                            <h1>Etirler</h1>
+                                                            <p><a href="">Kisi</a></p>
+                                                            <p><a href="">Qadin</a></p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                          </div> 
+                                    </li>
                                     <li><a href="about.html">About Us</a></li>
                                     <li><a href="cart.html">Cart</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
                                 </ul>
-                                <a href=""><span><i class="fas fa-search"></i></i></span></a>
-                                <a href=""><span><i class="fas fa-shopping-bag"></i></i></span></a>
+                                <div class="menyu-item">
+                                    <span onclick="openSearch()"><i class="fas fa-search"></i></span>
+                                    <span onclick="openNav()"><i class="fas fa-shopping-bag" ></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="search-bar">
+        <div id="search" class="search-bar">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="search-panel">
                             <span><i class="fas fa-search"></i></span>
                             <input type="text">
-                            <span><i class="fas fa-times"></i></span>
+                            <span onclick="closeSearch()"><i class="fas fa-times"></i></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="mySidenav" class="sidenav">
+            <span class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></span>
+          </div>
     </header>
     <!-- End header -->
 
@@ -89,11 +142,11 @@
 
                 <div class="mySlides fade">
                   <img src="img/banner-01.jpg" style="width:100%">
-                  <div class="content center ">
+                  <div class="content center  ">
                     <div class="content-middle">
                         <h1><span>WELCOME TO </span> Zəm-Zəm online shopping </h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <a href=""><button>SHOP NEW</button></a>
+                        <a href="product.html"><button>SHOP NEW</button></a>
                     </div>
                 </div>
                 </div>
@@ -101,7 +154,7 @@
                 <div class="mySlides fade ">
                   <img src="img/banner-02.jpg" style="width:100%">
                   <div class="content center ">
-                    <div class="content-middle">
+                    <div class="content-middle transRight">
                         <h1><span>WELCOME TO </span> Zəm-Zəm online shopping </h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                         <a href=""><button>SHOP NEW</button></a>
@@ -112,7 +165,7 @@
                 <div class="mySlides fade">
                   <img src="img/banner-03.jpg" style="width:100%">
                   <div class="content center ">
-                    <div class="content-middle">
+                    <div class="content-middle transLeft">
                         <h1><span>WELCOME TO </span> Zəm-Zəm online shopping </h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                         <a href=""><button>SHOP NEW</button></a>
@@ -123,11 +176,9 @@
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             <div class="slider-button">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
             </div>
             </div>
         </section>
@@ -216,7 +267,7 @@
             <div class="box">
               <div class="sale">SALE</div>
               <div class="image">
-                  <img src="img/img-pro-01.jpg" alt="">
+                  <img src="img/img-pro-03.jpg" alt="">
                   <div class="box-hover">
                       <ul>
                           <li><i class="fas fa-eye"></i></li>
@@ -232,9 +283,9 @@
           </div>
           <div class="filter-item" data-filter="best-Seller">
             <div class="box">
-              <div class="sale">SALE</div>
+              <div class="sale">NEW</div>
               <div class="image">
-                  <img src="img/img-pro-01.jpg" alt="">
+                  <img src="img/img-pro-04.jpg" alt="">
                   <div class="box-hover">
                       <ul>
                           <li><i class="fas fa-eye"></i></li>
@@ -252,7 +303,7 @@
             <div class="box">
               <div class="sale">SALE</div>
               <div class="image">
-                  <img src="img/img-pro-01.jpg" alt="">
+                  <img src="img/img-pro-02.jpg" alt="">
                   <div class="box-hover">
                       <ul>
                           <li><i class="fas fa-eye"></i></li>

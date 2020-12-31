@@ -62,6 +62,7 @@ Lahiyə 5 hissədən ibarət olacaq:
 - filter js kodlari yazildi
 - baner bolmesinde bezi deyisiklikler edildi
 
-
-
-
+# Day16
+- Dropdown elave olundu
+- banner hissesinde elaveler olundu
+- slidenav yaradildi

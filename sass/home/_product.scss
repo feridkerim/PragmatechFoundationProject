@@ -29,12 +29,12 @@ transition: all .3s ease-in-out;
 .box{
   position: relative;
   width: 255px;
-    height: 440px;
+  height: 440px;
   display: flex;
   align-items: flex-end;
-    position: relative;
-    margin: 45px 25px 0 0;
-    flex-direction: column;
+  position: relative;
+  margin: 45px 25px 0 0;
+  flex-direction: column;
 }
 .box:hover .box-hover{
   bottom: 0;
@@ -111,12 +111,12 @@ img{
 }
 
 .hide { 
-  animation: hide .7s ease 0s 1 normal forwards;
+  animation: hide .5s linear 0s 1 normal forwards;
   transform-origin: center;
 
 }
 .show { 
-    animation: show .7s ease 0s 1 normal forwards;    
+    animation: show .5s linear 0s 1 normal forwards;    
     transform-origin: center;
 }
 
