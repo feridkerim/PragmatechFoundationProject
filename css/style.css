@@ -165,7 +165,7 @@ header .main-top, header .search-panel {
           justify-content: space-between;
 }
 
-.content-middle span, #instagram .container .row, .footer-copyright {
+.content-middle span, .footer-copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +174,7 @@ header .main-top, header .search-panel {
           justify-content: center;
 }
 
-#blog .info .icons li, #instagram .container .arrows-prev button, #instagram .container .arrows-next button {
+#blog .info .icons li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,7 +311,7 @@ header .main-top, header .search-panel {
   margin-bottom: 40px;
 }
 
-.ml-4, .menyu > a, .menyu > ul > li {
+.ml-4, .menyu > a {
   margin-left: 40px;
 }
 
@@ -367,7 +367,7 @@ header .main-top, header .search-panel {
   margin-bottom: 60px;
 }
 
-.ml-6 {
+.ml-6, .menyu > ul > li {
   margin-left: 60px;
 }
 
@@ -1987,7 +1987,7 @@ header .main-top .accaunt .our-link ul li a:hover {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   cursor: pointer;
-  margin-left: 15px;
+  margin-left: 40px;
 }
 
 .menyu .menyu-item span:hover {
@@ -2060,71 +2060,99 @@ header .search-panel input {
   margin-left: 50px;
 }
 
-.dropdown {
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  border: none;
-  outline: none;
-  color: black;
-  background-color: white;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 9;
-  background-color: #f5f5f5;
-  overflow: hidden;
-  width: 100%;
-  left: 0;
-}
-
-.dropdown-content-item {
+#menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #f5f5f5;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.dropdown-content-item .dropdown-content-middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-right: 1px solid black;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+#menu li {
+  position: relative;
 }
 
-.dropdown-content-item .dropdown-content-middle:nth-last-child(1) {
-  border: none;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
+#menu a {
   text-decoration: none;
-  display: block;
-  text-align: left;
 }
 
-.dropdown-content a:hover {
+#menu li:hover > a {
   color: red;
 }
 
-.dropdown:hover .dropdown-content {
+#menu ul {
+  margin: 20px 0 0 0;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 9;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+#menu li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+  border: 1px solid lightgray;
+}
+
+#menu ul ul {
+  top: 0;
+  left: 190px;
+  margin: 0 0 0 20px;
+}
+
+#menu ul li {
   display: block;
+  background-color: white;
+}
+
+#menu ul a {
+  padding: 10px 10px;
+  display: block;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  #menu-wrap {
+    position: relative;
+  }
+  #menu {
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    z-index: 1;
+    display: none;
+  }
+  #menu ul {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    margin: 0;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #menu li {
+    position: static;
+    display: block;
+    margin: 5px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #menu a {
+    display: block;
+  }
+  #menu ul li:first-child a:after,
+  #menu ul ul li:first-child a:after {
+    border: 0;
+  }
 }
 
 .dot {
@@ -2771,58 +2799,63 @@ img {
 }
 
 #instagram .container {
-  width: 100%;
-  background: black;
-  padding: 50px 0;
-}
-
-#instagram .container .row {
+  width: 100% !important;
   position: relative;
 }
 
-#instagram .container .col {
-  width: 240px;
-  height: 240px;
-}
-
-.col img {
+#instagram img {
   width: 100%;
+  cursor: pointer;
 }
 
-#instagram .container .arrows-prev button {
-  font-size: x-large;
-  background: black;
-  color: white;
+#instagram {
+  background-color: black;
+  padding: 70px 0;
+}
+
+.glide-slides-item {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.glide-slides-item .overlay {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 50px;
-  height: 100%;
-  cursor: pointer;
-}
-
-#instagram .container .arrows-prev button:hover {
-  background: #d33b33;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-#instagram .container .arrows-next button {
-  font-size: x-large;
-  background: black;
-  color: white;
-  position: absolute;
-  top: 0;
   right: 0;
-  width: 50px;
-  height: 100%;
-  cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  background: rgba(211, 59, 51, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
 }
 
-#instagram .container .arrows-next button:hover {
-  background: #d33b33;
+.glide-slides-item:hover .overlay {
+  height: 100%;
+}
+
+.glide-slides-item .overlay a {
+  color: black;
+  font-size: 75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.glide-slides-item .overlay a:hover {
+  color: white;
 }
 
 #footer {
@@ -3315,9 +3348,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 [class^="col-"] {

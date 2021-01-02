@@ -66,3 +66,6 @@ Lahiyə 5 hissədən ibarət olacaq:
 - Dropdown elave olundu
 - banner hissesinde elaveler olundu
 - slidenav yaradildi
+
+# Day17
+- footer hissesine carusel elave olundu
