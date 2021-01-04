@@ -69,3 +69,7 @@ Lahiyə 5 hissədən ibarət olacaq:
 
 # Day17
 - footer hissesine carusel elave olundu
+
+# Day18
+- product sehifesi yaradildi
+- login-register sehifesi yaradildi

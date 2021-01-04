@@ -3,7 +3,6 @@ showSlides(slideIndex);
 
 function plusSlides(param) {
   showSlides(slideIndex += param);
-  let cont=document.querySelectorAll(".content")
 }
 
 function currentSlide(param) {

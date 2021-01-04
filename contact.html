@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,174 +8,310 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/glide.core.css">
+    <link rel="stylesheet" href="css/glide.theme.css">
 </head>
+
 <body style="font-family: 'Josefin Sans', sans-serif;">
-        <!-- Start Header -->
-        <header>
-            <section>
-                <div class="main-top">
-                    <div class="shopnow">
-                        <span id="cart"><i class="fab fa-opencart" style="margin: 0 20px 0 30px; font-size: large; color:#d33b33;"></i>50% off! Shop Now</span>
+    <!-- Start Header -->
+    <header>
+        <section>
+            <div class="main-top">
+                <div class="shopnow">
+                    <span id="cart"><i class="fab fa-opencart"
+                            style="margin: 0 20px 0 30px; font-size: large; color:#d33b33;"></i>50% off! Shop Now</span>
+                </div>
+                <div class="accaunt">
+                    <div class="our-link">
+                        <ul>
+                            <li>
+                                <a href="">My accaunt</a>
+                            </li>
+                            <li>
+                                <a href="">Contact us</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="accaunt">
-                        <div class="our-link">
-                            <ul>
-                                <li>
-                                    <a href="">My accaunt</a>
-                                </li>
-                                <li>
-                                    <a href="">Contact us</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="right-phone-box">
-                            <p>Call US :- <a href=""> (+994) 55 404 61 41</a></p>
-                        </div>
-                        <div class="custom-select-box">
-                            <span style="margin: auto; padding: 8px; ">₼ AZN</span>
-                        </div>
+                    <div class="right-phone-box">
+                        <p>Call US :- <a href=""> (+994) 55 404 61 41</a></p>
+                    </div>
+                    <div class="custom-select-box">
+                        <span style="margin: auto; padding: 8px; ">₼ AZN</span>
                     </div>
                 </div>
-            </section>
-    
-            <section class="logo-menyu">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="logo-menyu-item">
-                                <div class="logo">
-                                    <img src="./img/logo-1.png" alt="">
-                                </div>
-                                <div class="menyu">
-                                    <ul>
-                                        <li><a href="index.html">Home</a></span></li>
-                                        <li><a href="product.html">Product</a></li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                    <a href=""><span><i class="fas fa-search"></i></i></span></a>
-                                    <a href=""><span><i class="fas fa-shopping-bag"></i></i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="search-bar">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="search-panel">
-                                <span><i class="fas fa-search"></i></span>
-                                <input type="text">
-                                <span><i class="fas fa-times"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- End header -->
-
-        <section id="banner-about">
-            <div class="overlay"></div>
-            <div class="title">
-                <h2>Contact Us</h2>
-                <div>Home / Contact Us</div>
             </div>
         </section>
 
-
-        <section class="contact">
+        <section class="logo-menyu">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
-                        <div class="contact-info">
-                            <h2>Contact Info</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam, maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum rutrum. Nunc tristique purus turpis. Maecenas vulputate.</p>
-                        </div>
-                        <div class="contact-us">
-                            <p><span><i class="fas fa-map-marker-alt"></i></span>Address: Michael I. Days 3756 <br>Preston Street Wichita, <br>KS 67213</p>
-                            <p><span><i class="fas fa-phone-square-alt"></i></span>Phone: <a href="">+1-888 705 770</a></p>
-                            <p><span><i class="fas fa-envelope"></i></span>Email: <a href="">contactinfo@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <div class="text">
-                            <h2>Get In Touch</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam, maximus ut ullamcorper quis, placerat id eros.</p>
-                        </div>
-                        <div class="form-control">
-                            <div class="your-name">
-                                <input type="text" id="name" name="name" placeholder="Your Name" >
+                    <div class="col-12">
+                        <div class="logo-menyu-item">
+                            <div class="logo">
+                                <img src="./img/logo-1.png" alt="">
                             </div>
-                                <div class="your-email">
-                                    <input type="text" placeholder="Your Email" id="email" name="name" >
+                            <div class="menyu">
+                                <ul id="menu">
+                                    <li><a href="index.html">Home</a></li>
+
+                                    <li>
+                                        <a href="product.html">Product</a>
+                                        <ul>
+                                            <li>
+                                                <a href="">Quranlar</a>
+                                                <ul>
+                                                    <li><a href="">Sade</a></li>
+                                                    <li><a href="">Hediyyelik</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="">Kitablar</a>
+
+                                                <ul>
+                                                    <li><a href="">Dua Kitablari</a></li>
+                                                    <li><a href="">Hedisler</a></li>
+                                                    <li><a href="">Mersiyeler</a></li>
+                                                    <li><a href="">Ehkam</a></li>
+                                                    <li><a href="">Eqaid</a></li>
+                                                    <li><a href="">Exlaq</a></li>
+                                                    <li><a href="">Tarix</a></li>
+                                                    <li><a href="">Dunya Edebiyyati</a></li>
+                                                    <li><a href="">Usag Kitablari</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="">Uzukler</a>
+                                                <ul>
+                                                    <li><a href="">Eqiq</a></li>
+                                                    <li><a href="">Firuze</a></li>
+                                                    <li><a href="">Hedid-sin</a></li>
+                                                    <li><a href="">Dur-necef</a></li>
+                                                    <li><a href="">Sade</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="">Etirler</a>
+                                                <ul>
+                                                    <li><a href="">Kisi</a></li>
+                                                    <li><a href="">Qadin</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="">Suvenirler</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Tebii-qida-elaveleri</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Namaz-xalacalari</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Tesbehler</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Aksessuar</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Hicab-geyimleri</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="cart.html">Cart</a>
+                                    </li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                </ul>
+                                <div class="menyu-item">
+                                    <span onclick="openSearch()"><i class="fas fa-search"></i></span>
+                                    <span onclick="openNav()"><i class="fas fa-shopping-bag"></i></span>
                                 </div>
-                                <div class="subject">
-                                    <input type="text"  id="subject" name="name" placeholder="Subject" >
-                                </div>
-                                <div class="your-message">
-                                    <textarea  id="message" placeholder="Your Message" rows="4" ></textarea>
-                                </div>
-                                <div class="send">
-                                    <button>Send Mesaage</button>
-                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
-
-
-        <section id="instagram">
+        <div id="search" class="search-bar">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <img src="./img/instagram-img-01.jpg" alt="">
+                    <div class="col-12">
+                        <div class="search-panel">
+                            <span><i class="fas fa-search"></i></span>
+                            <input type="text">
+                            <span onclick="closeSearch()"><i class="fas fa-times"></i></span>
+                        </div>
                     </div>
-                    <div class="col">
-                        <img src="./img/instagram-img-02.jpg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="./img/instagram-img-03.jpg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="./img/instagram-img-05.jpg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="./img/instagram-img-06.jpg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="./img/instagram-img-01.jpg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="./img/instagram-img-02.jpg" alt="">
-                    </div>
-                    <div class="arrows">
-                    <div class="arrows-prev">
-                        <a href=""><button class="prev"><i class="fas fa-angle-left"></i></button></a>
-                    </div>
-                    <div class="arrows-next">
-                        <a href=""><button class="prev"><i class="fas fa-angle-right"></i></button></a>
-                    </div>
-                    </div> 
                 </div>
             </div>
-        </section>
-    
-        <footer id="footer">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <span class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></span>
+        </div>
+    </header>
+    <!-- End header -->
+
+
+    <section id="banner-about">
+        <div class="overlay"></div>
+        <div class="title">
+            <h2>Contact Us</h2>
+            <div>Home / Contact Us</div>
+        </div>
+    </section>
+
+
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="contact-info">
+                        <h2>Contact Info</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam, maximus ut
+                            ullamcorper quis, placerat id eros. Duis semper justo sed condimentum rutrum. Nunc tristique
+                            purus turpis. Maecenas vulputate.</p>
+                    </div>
+                    <div class="contact-us">
+                        <p><span><i class="fas fa-map-marker-alt"></i></span>Address: Michael I. Days 3756 <br>Preston
+                            Street Wichita, <br>KS 67213</p>
+                        <p><span><i class="fas fa-phone-square-alt"></i></span>Phone: <a href="">+1-888 705 770</a></p>
+                        <p><span><i class="fas fa-envelope"></i></span>Email: <a href="">contactinfo@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="text">
+                        <h2>Get In Touch</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam, maximus ut
+                            ullamcorper quis, placerat id eros.</p>
+                    </div>
+                    <div class="form-control">
+                        <div class="your-name">
+                            <input type="text" id="name" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="your-email">
+                            <input type="text" placeholder="Your Email" id="email" name="name">
+                        </div>
+                        <div class="subject">
+                            <input type="text" id="subject" name="name" placeholder="Subject">
+                        </div>
+                        <div class="your-message">
+                            <textarea id="message" placeholder="Your Message" rows="4"></textarea>
+                        </div>
+                        <div class="send">
+                            <button>Send Mesaage</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="instagram">
+        <div class="container">
+            <div class="row">
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="glide-slides-item">
+                                    <img src="img/instagram-img-01.jpg" alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="glide-slides-item">
+                                    <img src="img/instagram-img-03.jpg" alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <a href=""><i class="fab fa-instagram"></i></a>>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="glide-slides-item">
+                                    <img src="img/instagram-img-02.jpg" alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="glide-slides-item">
+                                    <img src="img/instagram-img-01.jpg" alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="glide-slides-item">
+                                    <img src="img/instagram-img-06.jpg" alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="glide-slides-item">
+                                    <img src="img/instagram-img-05.jpg" alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="glide-slides-item">
+                                    <img src="img/instagram-img-02.jpg" alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="glide-slides-item">
+                                    <img src="img/instagram-img-01.jpg" alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="glide-slides-item">
+                                    <img src="img/instagram-img-03.jpg" alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&#10094;</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
         <section>
             <div class="container">
                 <div class="row1">
                     <div class="col-4">
                         <div class="footer-about">
                             <h3>About Zem-ZemShop</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                         <div class="social">
                             <ul>
@@ -195,28 +332,43 @@
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="cart.html">Cart</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
-                            </ul>    
+                            </ul>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="footer-contact">
                             <h3>Contact US</h3>
                             <ul>
-                                <li><span><i class="fas fa-map-marker-alt"></i></span>Address: Michael I. Days 3756 <br> Preston Street Wichita,<br>KS 67213</li>
-                                <li><span><i class="fas fa-phone-square-alt"></i></span>Phone: <a href="">+1-888 705 770</a></li>
-                                <li><span><i class="fas fa-envelope"></i></span>Email: <a href="">contactinfo@gmail.com</a></li>
+                                <li><span><i class="fas fa-map-marker-alt"></i></span>Address: Michael I. Days 3756 <br>
+                                    Preston Street Wichita,<br>KS 67213</li>
+                                <li><span><i class="fas fa-phone-square-alt"></i></span>Phone: <a href="">+1-888 705
+                                        770</a></li>
+                                <li><span><i class="fas fa-envelope"></i></span>Email: <a
+                                        href="">contactinfo@gmail.com</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    
-        </footer>
-    
-        <div class="footer-copyright">
-            All Rights Reserved. © 2020 Zem-Zem Shop Design By : 
-        </div>
-    
+
+    </footer>
+
+    <div class="footer-copyright">
+        All Rights Reserved. © 2020 Zem-Zem Shop Design By :
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/glide.js"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 9,
+            autoplay: 3000 | true,
+            animationDuration: 1000,
+        }).mount()
+    </script>
 </body>
+
 </html>

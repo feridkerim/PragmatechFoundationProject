@@ -1,0 +1,52 @@
+#checkout{
+    margin: 70px 0;
+}
+
+
+.accaunt-login .accaunt-login-title h2{
+    padding: 0 0 10px;
+    border-bottom: 3px solid black;
+}
+
+
+.accaunt-login-click{
+    margin-top: 15px;
+    transition: all .3s linear;
+    cursor: pointer;
+    &:hover{
+        color: $main-color1;
+    }
+}
+
+.form-row{
+    display: flex;
+    font-size: 18px;
+}
+
+.formLogin{
+    margin-top: 2rem;
+}
+
+.form-row .form-control{
+    margin-top: 5px;
+    border: 1px solid lightgray;
+    padding: 10px 5px;
+    width: 260px;
+}
+
+
+.accaunt-login-btn{
+    padding: 10px 20px;
+    background-color: $main-color1;
+    color: white;
+    transition: all .3s linear;
+    cursor: pointer;
+    &:hover{
+        background-color: black;
+    }
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
