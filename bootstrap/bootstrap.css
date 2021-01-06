@@ -111,9 +111,12 @@ h4, .h4 {
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: 20px;
   }
 }
+
+
 
 h5, .h5 {
   font-size: 1.25rem;
@@ -125,7 +128,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 abbr[title],
@@ -153,7 +156,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 ol ol,
@@ -208,10 +211,11 @@ sup {
 
 a {
   color: #0d6efd;
-  text-decoration: underline;
+  text-decoration: none;
+  color: #000;
 }
 a:hover {
-  color: #0a58ca;
+  color: #d33b33;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -310,8 +314,8 @@ button {
 }
 
 button:focus {
-  outline: dotted 1px;
-  outline: -webkit-focus-ring-color auto 5px;
+  outline: none;
+  outline: none;
 }
 
 input,
@@ -2178,9 +2182,9 @@ progress {
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #86b7fe;
+  border-color: #d33b33;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  /* box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); */
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -2891,7 +2895,7 @@ textarea.form-control-lg {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  /* transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -3383,11 +3387,11 @@ textarea.form-control-lg {
   }
 }
 .fade:not(.show) {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .collapse:not(.show) {
-  display: none;
+  /* display: none; */
 }
 
 .collapsing {
@@ -6186,6 +6190,7 @@ textarea.form-control-lg {
 
 .d-flex {
   display: flex !important;
+  justify-content: space-between;
 }
 
 .d-inline-flex {

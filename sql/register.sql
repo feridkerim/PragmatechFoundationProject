@@ -9,7 +9,7 @@ CREATE TABLE Register (
 
 
 INSERT INTO Register(RegFirstName,RegLastName,RegEmail,RegPassword,RegDate)
-VALUES('Ferid','kerimmm','feriddkerim04@gmail.com','123456','02.05.2020')
+VALUES('Ferid','kerim','feridkerim04@gmail.com','123456','02.05.2020')
 
 SELECT * FROM ContactUs;
 SELECT * FROM Register;
@@ -17,18 +17,19 @@ SELECT * FROM Login;
 
 DROP TABLE Login
 
-DELETE FROM ContactUs WHERE id=1
+DELETE FROM Register WHERE id=1
 
 CREATE TABLE Login (
     id INTEGER PRIMARY KEY,
-    LoginPassword VARCHAR(50) NOT NULL,
     LoginEmail VARCHAR(50) NOT NULL,
-    CONSTRAINT "enter_login" FOREIGN KEY (LoginEmail) REFERENCES Register(RegEmail)
+    LoginPassword VARCHAR(50) NOT NULL,
+    CONSTRAINT enter_login FOREIGN KEY (LoginEmail) REFERENCES Register(RegEmail),
+    CONSTRAINT enter_password FOREIGN KEY (LoginPassword) REFERENCES Register(RegPassword)
 );
 
 
-INSERT INTO Login(LoginPassword,LoginEmail)
-VALUES('123453','feridddkerim04@gmail.com')
+INSERT INTO Login(LoginEmail,LoginPassword)
+VALUES('feridddkerim04@gmail.com','123453')
 
 
 CREATE TABLE ContactUs (

@@ -2170,7 +2170,7 @@ header .search-panel input {
   border: 3px solid #d33b33;
 }
 
-.active {
+.activee {
   background-color: #d33b33;
   border: 3px solid #d33b33;
 }
@@ -2669,6 +2669,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .filters-btns {
@@ -2842,7 +2845,7 @@ img {
 
 .glide-slides-item .overlay a {
   color: black;
-  font-size: 75px;
+  font-size: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3610,58 +3613,89 @@ img {
   width: 100%;
 }
 
-#checkout {
+.cart-box-main {
   margin: 70px 0;
-}
-
-.accaunt-login .accaunt-login-title h2 {
-  padding: 0 0 10px;
-  border-bottom: 3px solid black;
-}
-
-.accaunt-login-click {
-  margin-top: 15px;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
-  cursor: pointer;
-}
-
-.accaunt-login-click:hover {
-  color: #d33b33;
 }
 
 .form-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 18px;
-}
-
-.formLogin {
-  margin-top: 2rem;
-}
-
-.form-row .form-control {
-  margin-top: 5px;
-  border: 1px solid lightgray;
-  padding: 10px 5px;
-  width: 260px;
-}
-
-.accaunt-login-btn {
-  padding: 10px 20px;
-  background-color: #d33b33;
-  color: white;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
-  cursor: pointer;
-}
-
-.accaunt-login-btn:hover {
-  background-color: black;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .form-group {
   margin-bottom: 1rem;
+}
+
+.title-left {
+  font-size: 16px;
+  border-bottom: 3px solid #010101;
+  margin-bottom: 20px;
+}
+
+.payment-icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.payment-icon {
+  height: 100%;
+}
+
+.btn-login {
+  padding: 10px 20px !important;
+  background-color: #d33b33 !important;
+  color: white !important;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  outline: none;
+  border-radius: 0px !important;
+}
+
+.btn-login:hover {
+  background-color: black !important;
+}
+
+.shopping-box {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+
+.form-row > .col, .form-row > [class*=col-] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.wide {
+  min-height: 48px;
+  border: 1px solid #e8e8e8;
+}
+
+.dd-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#country {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+
+#state {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
 }
 /*# sourceMappingURL=style.css.map */

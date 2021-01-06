@@ -1,52 +1,70 @@
-#checkout{
+.cart-box-main{
     margin: 70px 0;
-}
-
-
-.accaunt-login .accaunt-login-title h2{
-    padding: 0 0 10px;
-    border-bottom: 3px solid black;
-}
-
-
-.accaunt-login-click{
-    margin-top: 15px;
-    transition: all .3s linear;
-    cursor: pointer;
-    &:hover{
-        color: $main-color1;
-    }
 }
 
 .form-row{
     display: flex;
-    font-size: 18px;
-}
-
-.formLogin{
-    margin-top: 2rem;
-}
-
-.form-row .form-control{
-    margin-top: 5px;
-    border: 1px solid lightgray;
-    padding: 10px 5px;
-    width: 260px;
-}
-
-
-.accaunt-login-btn{
-    padding: 10px 20px;
-    background-color: $main-color1;
-    color: white;
-    transition: all .3s linear;
-    cursor: pointer;
-    &:hover{
-        background-color: black;
-    }
+    flex-wrap: wrap;
 }
 
 .form-group{
     margin-bottom: 1rem;
 }
 
+.title-left{
+    font-size: 16px;
+    border-bottom: 3px solid #010101;
+    margin-bottom: 20px;
+}
+
+.payment-icon ul{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.payment-icon{
+    height: 100%;
+}
+
+.btn-login{
+    padding: 10px 20px !important;
+    background-color: $main-color1 !important;
+    color: white !important;
+    transition: all .3s linear;
+    outline: none;
+    border-radius: 0px !important;
+    &:hover{
+        background-color: black !important;
+    }
+}
+
+.shopping-box{
+    justify-content: flex-end !important;
+}
+
+.form-row>.col, .form-row>[class*=col-] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+.wide {
+    min-height: 48px;
+    border: 1px solid #e8e8e8;
+}
+
+.dd-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#country{
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
+
+#state{
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
