@@ -73,3 +73,6 @@ Lahiyə 5 hissədən ibarət olacaq:
 # Day18
 - product sehifesi yaradildi
 - login-register sehifesi yaradildi
+
+# Day-19
+- checkout sehifesi yaradildi
