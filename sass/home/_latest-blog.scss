@@ -78,7 +78,7 @@
     transition: all .3s ease-out;
     p{
         position: absolute;
-        right: -95px;
+        right: -101px;
         background-color: rgba($main-color1, 0.9);
         color: $main-color3;
         padding: 10px;
@@ -87,6 +87,8 @@
         visibility: hidden;
         width: 74px;
         text-align: center;
+        width: 100px;
+        border-radius: 15px;
     }
     &:hover{
         background: $main-color1;

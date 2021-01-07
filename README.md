@@ -74,5 +74,9 @@ Lahiyə 5 hissədən ibarət olacaq:
 - product sehifesi yaradildi
 - login-register sehifesi yaradildi
 
-# Day-19
+# Day19
 - checkout sehifesi yaradildi
+
+# Day20
+- main-top hissesindeki slide yaradildi
+- search-panel js codlari yazildi

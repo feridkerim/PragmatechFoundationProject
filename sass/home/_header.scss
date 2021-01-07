@@ -9,7 +9,7 @@ header{
         background-color: $main-color2;
         color:$main-color3;
         @extend %flex-align-items-space-between;
-        .shopnow {
+        .mySlides-main-item {
             font-size:$font-size3;
             @extend %flex-align-items-center;
              
@@ -17,6 +17,7 @@ header{
         }
         .accaunt {
             @extend %flex-align-items-center;
+            margin-right: 10px;
             .custom-select-box{
                 @extend %flex-align-items-center;
                 background-color: $main-color1;
@@ -72,11 +73,12 @@ header{
 .logo{
     width: 120px;
 }
-.logo-menyu{
+#logo-menyu{
+  background-color: white;
     .logo-menyu-item{
         display: flex;
         justify-content: space-between;
-        margin: 5px 0;
+        margin: 15px 0;
         position: relative;
     }
         >.logo a{
@@ -124,16 +126,23 @@ header{
     
     
 
-
+header .search-bar.open{
+  height: 60px;
+}
 
 header .search-bar{
     background: $main-color2;
+    transition: .3s linear;
+    height: 0;
 }
 
 header .search-panel{
     @extend .main-height-6;
     color: $main-color3;
     @extend %flex-align-items-space-between;
+    .search{
+      cursor: pointer;
+    }
     input{
         width: 94%;
         height: 60%;
@@ -145,7 +154,27 @@ header .search-panel{
 
 
 
+.main-text {
+  color: white;
+  font-size: 15px;
+}
 
+.mySlides-main{
+  display: none;
+}
+
+/* Fading animation */
+.fadee {
+  animation-name: fadee;
+  animation-duration: 2s;
+}
+
+
+
+@keyframes fadee {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
 
 
 .sidenav {
@@ -184,7 +213,12 @@ header .search-panel{
 
 
 
-
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
 
 
 
@@ -297,7 +331,29 @@ header .search-panel{
 
 
 
+  #myBtn {
+    display: none;
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: $main-color1;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all .3s linear;
+  }
+  
+  #myBtn:hover {
+    background-color: black;
+  }
 
-
-
+@media (max-width: 1440px){
+  
+}
   

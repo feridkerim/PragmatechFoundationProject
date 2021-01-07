@@ -5,37 +5,12 @@
     margin-top: 70px;
 }
 
-.cart .row-head .col-2{
-    padding: 20px 0 20px 0;
-    width: 12%;
-    &:nth-child(1){
-        padding-left: 10px;
-    }
-    &:nth-child(4){
-        width: 40%;
-    }
-    &:nth-child(2){
-        width: 40%;
-    }
-}
 
 .cart .row-body .col-2 img{
     width: 100px;
 }
 
-.cart .row-body .col-2{
-    width: 12%;
-    &:nth-child(1){
-        padding-left: 10px;
-    }
-    
-    &:nth-child(4){
-        width: 40%;
-    }
-    &:nth-child(2){
-        width: 40%;
-    }
-}
+
 
 .cart .row-body .col-2 {
     &:nth-last-child(1){

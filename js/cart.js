@@ -1,33 +1,3 @@
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-
-
-
-
-
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-
-
-
-
 var slideIndexx = 0;
 showSlidess();
 
@@ -102,3 +72,11 @@ function openNav() {
   }
 
 
+
+var cartPrice = document.querySelectorAll("#cart-price");
+var price = document.querySelectorAll("#azn");
+price.innerHTML = cartPrice.value;
+
+cartPrice.oninput = function() {
+  price.innerHTML = this.value;
+}

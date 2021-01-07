@@ -84,6 +84,11 @@
     margin-left: 5px;
   }
   
+
+   .notAfter:after{
+    display: none;
+  }
+
   .filter-categories-item .active:after {
     content: "\2212";
   }
