@@ -260,12 +260,12 @@
                     <span>Lorem ipsum dolor sit amet</span>
                 </div>
                 <div class="col-2">
-                    <span>₼ 80.0</span>
+                    <span>₼ </span><span class="product-price">50</span>
                 </div>
                 <div class="col-2">
-                    <input type="number" size="4" value="1" min="0" step="1" id="cart-price">
+                    <input type="number" size="4" value="1" min="0" step="1" class="cart-price">
                 </div>
-                <div class="col-2"><span id="azn">₼ 80.0</span></div>
+                <div class="col-2"><span>₼ </span><span class="azn">50</span></div>
                 <div class="col-2"><span><i class="fas fa-times"></i></span></div>
             </div>
             <div class="row-body">
@@ -278,12 +278,12 @@
                     <span>Lorem ipsum dolor sit amet</span>
                 </div>
                 <div class="col-2">
-                    <span>₼ 80.0</span>
+                    <span>₼ </span><span class="product-price">99.9</span>
                 </div>
                 <div class="col-2">
-                    <input type="number" size="4" value="1" min="0" step="1" id="cart-price">
+                    <input type="number" size="4" value="1" min="0" step="1" class="cart-price">
                 </div>
-                <div class="col-2"><span id="azn">₼ 80.0</span></div>
+                <div class="col-2"><span>₼ </span><span class="azn"> 99.9</span></div>
                 <div class="col-2"><span><i class="fas fa-times"></i></span></div>
             </div>
             <div class="row-body">
@@ -296,12 +296,12 @@
                     <span>Lorem ipsum dolor sit amet</span>
                 </div>
                 <div class="col-2">
-                    <span>₼ 80.0</span>
+                    <span>₼ </span><span class="product-price">80</span>
                 </div>
                 <div class="col-2">
-                    <input type="number" size="4" value="1" min="0" step="1" id="cart-price">
+                    <input type="number" size="4" value="1" min="0" step="1" class="cart-price">
                 </div>
-                <div class="col-2"><span id="azn">₼ 80.0</span></div>
+                <div class="col-2"><span>₼ </span><span class="azn">80</span></div>
                 <div class="col-2"><span><i class="fas fa-times"></i></span></div>
             </div>
         </div>
@@ -316,11 +316,12 @@
                         <span style="color: #d33b33;">
                             Grand Total
                         </span>
+                        <span>₼ </span>
                         <span id="azn">
-                            ₼ 240
+                            240
                         </span>
                     </div>
-                    <button>To Order</button>
+                    <button>Checkout</button>
                 </div>
             </div>
         </div>
@@ -483,7 +484,7 @@
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 
-
+    <script src="jquery/jquery-3.5.1.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/glide.js"></script>
     <script>

@@ -71,12 +71,33 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
 
+  function setGrandTotal() {
+    var priceElem = $('.azn');
+    var allPrices = 0;
+    for(var i = 0; i < priceElem.length; i++){
+      allPrices += Number(priceElem.eq(i).text())
+    }
+    $('#azn').text(allPrices)
+  }
+
+  setGrandTotal();
 
 
-var cartPrice = document.querySelectorAll("#cart-price");
-var price = document.querySelectorAll("#azn");
-price.innerHTML = cartPrice.value;
+$('.cart-price').change(function(){
+  var totalPrice = $(this).closest('.row-body').find('.azn');
+  var productPrice = $(this).closest('.row-body').find('.product-price');
+  var inputVal = $(this).val();
+  var newPrice = Number(inputVal) * Number(productPrice.text());
+  totalPrice.text(newPrice);
+  setGrandTotal();
+})
 
-cartPrice.oninput = function() {
-  price.innerHTML = this.value;
-}
+
+
+
+
+
+
+
+
+
