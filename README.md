@@ -80,3 +80,6 @@ Lahiyə 5 hissədən ibarət olacaq:
 # Day20
 - main-top hissesindeki slide yaradildi
 - search-panel js codlari yazildi
+
+# Day21
+- cart sehifesinin js kodlari yazildi
