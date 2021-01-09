@@ -12,6 +12,11 @@
     font-weight: 700;
   }
   
+  .footer-link, .footer-link-contact, .footer-widget{
+    margin-top: 30px;
+  }
+
+
   .footer-widget p {
     color: #cccccc;
     font-weight: 400;
@@ -67,10 +72,6 @@
     position: relative;
     padding-left: 15px;
     transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
   }
   
   

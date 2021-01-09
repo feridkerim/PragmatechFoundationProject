@@ -102,3 +102,26 @@ function openNav() {
   }
 
 
+
+
+
+
+
+var row = document.querySelector(".product-row");
+
+row.addEventListener('click',function(){
+  var tabPanel = document.querySelector(".tab-panel");
+  var tabPanelHead= document.querySelector(".tab-panel-head");
+  tabPanelHead.style.display="none";
+  tabPanel.style.display="block";
+})
+
+var col = document.querySelector(".product-col");
+
+
+col.addEventListener('click',function(){
+  var tabPanel = document.querySelector(".tab-panel");
+  var tabPanelHead= document.querySelector(".tab-panel-head");
+  tabPanelHead.style.display="block";
+  tabPanel.style.display="none";
+})
