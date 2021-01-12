@@ -16,7 +16,7 @@
 
 </head>
 
-<body style="font-family: 'Josefin Sans', sans-serif;">
+<body style="font-family: 'Josefin Sans', sans-serif;     font-size: 18px;">
     <!-- Start Header -->
     <header>
         <section>
@@ -232,77 +232,123 @@
         <div class="container">
             <div class="row-head">
                 <div class="col-2">
-                    <span>Images</span>
+                    <div class="cart-title">
+                        <span>Images</span>
+                    </div>
                 </div>
                 <div class="col-2">
-                    <span>Product Name</span>
+                    <div class="cart-title">
+                        <span>Product Name</span>
+                    </div>
                 </div>
                 <div class="col-2">
-                    <span>Price</span>
+                    <div class="cart-title">
+                        <span>Price</span>
+                    </div>
                 </div>
                 <div class="col-2">
-                    <span>Quantity</span>
+                    <div class="cart-title">
+                        <span>Quantity</span>
+                    </div>
                 </div>
                 <div class="col-2">
-                    <span>Total</span>
+                    <div class="cart-title">
+                        <span>Total</span>
+                    </div>
                 </div>
                 <div class="col-2">
-                    <span>Remove</span>
+                    <div class="cart-title">
+                        <span>Remove</span>
+                    </div>
                 </div>
             </div>
             <div class="row-body">
                 <div class="col-2">
-                    <div class="img">
-                        <img src="img/img-pro-01.jpg" alt="">
+                    <div class="row-body-item">
+                        <div class="img">
+                            <img src="img/img-pro-01.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="col-2">
-                    <span>Lorem ipsum dolor sit amet</span>
+                    <div class="product-name">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
                 </div>
                 <div class="col-2">
-                    <span>₼ </span><span class="product-price">50</span>
+                    <div class="row-body-price">
+                        <span>₼ </span><span class="product-price">50</span>
+                    </div>
                 </div>
                 <div class="col-2">
-                    <input type="number" size="4" value="1" min="0" step="1" class="cart-price">
+                    <div class="row-body-quantity">
+                        <input type="number" size="4" value="1" min="0" step="1" class="cart-price">
+                    </div>
                 </div>
-                <div class="col-2"><span>₼ </span><span class="azn">50</span></div>
-                <div class="col-2"><span><i class="fas fa-times"></i></span></div>
+                <div class="col-2">
+                    <div class="row-body-remove">
+                        <span>₼ </span><span class="azn">50</span>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <span class="remove-col"  onclick="removeCartItem()"><i class="fas fa-times"></i></span>
+                </div>
             </div>
             <div class="row-body">
                 <div class="col-2">
-                    <div class="img">
-                        <img src="img/img-pro-04.jpg" alt="">
+                    <div class="row-body-item">
+                        <div class="img">
+                            <img src="img/img-pro-04.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="col-2">
-                    <span>Lorem ipsum dolor sit amet</span>
+                    <div class="product-name">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
                 </div>
                 <div class="col-2">
-                    <span>₼ </span><span class="product-price">99</span>
+                    <div class="row-body-price">
+                        <span>₼ </span><span class="product-price">99</span>
+                    </div>
                 </div>
                 <div class="col-2">
-                    <input type="number" size="4" value="1" min="0" step="1" class="cart-price">
+                    <div class="row-body-quantity">
+                        <input type="number" size="4" value="1" min="0" step="1" class="cart-price">
+                    </div>
                 </div>
-                <div class="col-2"><span>₼ </span><span class="azn"> 99</span></div>
-                <div class="col-2"><span><i class="fas fa-times"></i></span></div>
+                <div class="col-2">                    <div class="row-body-remove">
+                    <span>₼ </span><span class="azn">50</span>
+                </div></div>
+                <div class="col-2"><span class="remove-col" onclick="removeCartItem()"><i class="fas fa-times"></i></span></div>
             </div>
             <div class="row-body">
                 <div class="col-2">
-                    <div class="img">
-                        <img src="img/img-pro-03.jpg" alt="">
+                    <div class="row-body-item">
+                        <div class="img">
+                            <img src="img/img-pro-03.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="col-2">
-                    <span>Lorem ipsum dolor sit amet</span>
+                    <div class="product-name">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
                 </div>
                 <div class="col-2">
-                    <span>₼ </span><span class="product-price">80</span>
+                    <div class="row-body-price">
+                        <span>₼ </span><span class="product-price">80</span>
+                    </div>
                 </div>
                 <div class="col-2">
-                    <input type="number" size="4" value="1" min="0" step="1" class="cart-price">
+                    <div class="row-body-quantity">
+                        <input type="number" size="4" value="1" min="0" step="1" class="cart-price">
+                    </div>
                 </div>
-                <div class="col-2"><span>₼ </span><span class="azn">80</span></div>
-                <div class="col-2"><span><i class="fas fa-times"></i></span></div>
+                <div class="col-2">                    <div class="row-body-remove">
+                    <span>₼ </span><span class="azn">50</span>
+                </div></div>
+                <div class="col-2"><span class="remove-col" onclick="removeCartItem()"><i class="fas fa-times"></i></span></div>
             </div>
         </div>
     </section>
@@ -312,7 +358,7 @@
             <div class="row">
                 <div class="col-8"></div>
                 <div class="col-4">
-                    <div class="text">
+                    <div class="grand-total">
                         <span style="color: #d33b33;">
                             Grand Total
                         </span>
@@ -423,9 +469,9 @@
                     <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-widget">
                             <h4>About ZemZemShop</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor
-                                incididunt ut labore et dolore<br> magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea <br> commodo consequat.
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.
                             </p>
                             <ul>
                                 <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
@@ -442,11 +488,11 @@
                         <div class="footer-link">
                             <h4>Information</h4>
                             <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Product</a></li>
+                                <li><a href="#">Cart</a></li>
                                 <li><a href="#">About Us</a></li>
-                                <li><a href="#">Customer Service</a></li>
-                                <li><a href="#">Our Sitemap</a></li>
-                                <li><a href="#">Terms &amp; Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">Delivery Information</a></li>
                             </ul>
                         </div>

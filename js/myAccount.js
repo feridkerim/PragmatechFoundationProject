@@ -71,46 +71,28 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
 
-  function setGrandTotal() {
-    var priceElem = $('.azn');
-    var allPrices = 0;
-    for(var i = 0; i < priceElem.length; i++){
-      allPrices += Number(priceElem.eq(i).text())
-    }
-    $('#azn').text(allPrices)
-  }
-
-  setGrandTotal();
-
-
-$('.cart-price').change(function(){
-  var totalPrice = $(this).closest('.row-body').find('.azn');
-  var productPrice = $(this).closest('.row-body').find('.product-price');
-  var inputVal = $(this).val();
-  var newPrice = Number(inputVal) * Number(productPrice.text());
-  totalPrice.text(newPrice);
-  setGrandTotal();
-})
-
-
-function removeCartItem(){
-  var buttonClicked = event.target
-  buttonClicked.parentElement.parentElement.parentElement.remove()
-  setGrandTotal();
-}
-
-
-function addCart(){
-  console.log(localStorage.getItem(".box"))
-}
 
 
 
 
+  var modalBtn = document.querySelector("#myBtnn")
 
+  modalBtn.addEventListener('click', function () {
+      var modal = document.querySelector("#myModal");
+      modal.style.display = "block";
+      var close = document.querySelector(".close")
+      close.addEventListener('click', function () {
+          modal.style.display = "none";
+      })
+  })
 
+  var modalBtnAdress = document.querySelector("#myBtnAdress")
 
-
-
-
-
+  modalBtnAdress.addEventListener('click', function () {
+      var modalAdress = document.querySelector("#myModalAdress");
+      modalAdress.style.display = "block";
+      var close = document.querySelector(".closee")
+      close.addEventListener('click', function () {
+          modalAdress.style.display = "none";
+      })
+  })

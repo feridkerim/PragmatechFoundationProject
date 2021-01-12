@@ -8,6 +8,7 @@
 
 .cart .row-body .col-2 img{
     width: 100px;
+    padding: 0;
 }
 
 
@@ -30,7 +31,7 @@
     display: flex;
     align-items: center;
     border-top: 1px solid lightgray;
-    padding-top: 15px;
+    padding: 15px 0;
 }
 
 .cart .row-body .col-2 span i{
@@ -43,3 +44,25 @@
 }
 
 
+.row-head .cart-title{
+    padding: 15px 0;
+    text-align: center;
+}
+
+
+.product-name{
+    text-align: center;
+}
+
+.row-body-price{
+    text-align: center;
+}
+
+
+.row-body-quantity{
+    text-align: center;
+}
+
+.row-body-remove{
+    text-align: center;
+}

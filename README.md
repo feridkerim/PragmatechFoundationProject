@@ -89,3 +89,6 @@ Lahiyə 5 hissədən ibarət olacaq:
 - elave edilen section-nin css ve js kodlari yazildi
 - myAccount sehifesi yaradildi html css kodlari yazildi
 
+# Day23
+- myaccount ve cart sehifesinde js kodlari yazildi
+

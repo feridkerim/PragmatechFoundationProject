@@ -28,7 +28,7 @@
     margin: 70px 0;
 }
 
-.to-order .col-4 .text{
+.to-order .col-4 .grand-total{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -36,4 +36,8 @@
     margin-bottom: 30px;
     font-size: 30px;
 
+}
+
+.row-body-item{
+    text-align: center;
 }
